@@ -2,7 +2,6 @@ import React from 'react'
 import NavBar from '../../components/NavBar';
 import Hero from '../../components/Hero';
 import Services from './elements/Services';
-import Layout from '../../components/Layout';
 import Footer from '../../components/Footer';
 import VideoBanner from '../../components/VideoBanner';
 import Blogs from '../blogs/Blogs';
