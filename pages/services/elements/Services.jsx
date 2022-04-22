@@ -1,6 +1,6 @@
 import React from 'react'
 import Heading from '../../../components/Heading';
-import TextCard from '../../../components/textCard.jsx';
+import TextCard from '../../../components/TextCard';
 const Services = () => {
   return (
     <div className="container px-5 py-14 mx-auto">
