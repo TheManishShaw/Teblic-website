@@ -3,7 +3,7 @@ import Image from 'next/image';
 const OdooContent = () => {
   return (
     <section className="text-zinc-500 body-font container mx-auto  px-5 py-5 ">
-      <h1 className="title-font sm:text-4xl mt-5 text-gray-900 xl:text-5xl lg:text-3xl text-3xl  font-semibold uppercase">
+      <h1 className="title-font sm:text-4xl mt-5 lg:mb-8 text-gray-900 xl:text-5xl lg:text-3xl text-3xl  font-semibold uppercase">
         Meet the gamechanger,
         <br className="hidden lg:inline-block" />
         say hi to Odoo
