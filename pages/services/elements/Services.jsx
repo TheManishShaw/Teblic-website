@@ -1,6 +1,6 @@
 import React from 'react'
 import Heading from '../../../components/Heading';
-import TextCard from '../../../components/textCard';
+import TextCard from '../../../components/TextCard';
 import Link from 'next/link'
 import Odoo from '../innerpage/Odoo';
 const Services = () => {
