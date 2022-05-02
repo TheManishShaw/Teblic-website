@@ -1,6 +1,6 @@
 import React from 'react'
 import Heading from '../../../components/Heading';
-import TextCard from '../../../components/TextCard';
+import TextCard from '../../../components/textCard';
 
 
 const TechnologyContent = () => {
@@ -42,4 +42,4 @@ const TechnologyContent = () => {
   );
 }
 
-export default TechnologyContent
+export default TechnologyContent;

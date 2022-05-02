@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const VideoBanner = () => {
   return (
-    <div className=" bg-video bg-no-repeat bg-cover bg-center  object-cover">
+    <div className=" bg-video bg-no-repeat bg-cover bg-center object-cover">
       <div className="container w-full mx-auto px-6 py-10">
         <div className="flex items-center flex-wrap ">
           <div className="w-full md:w-1/2 px-4">
@@ -11,7 +11,7 @@ const VideoBanner = () => {
               src="/assets/img/banners/video.png"
               alt="use the force"
               width={1000}
-              height={500}
+              height={510}
             />
           </div>
           <div className="w-full md:w-1/2   rounded-md h-full  sm:p-4 ">

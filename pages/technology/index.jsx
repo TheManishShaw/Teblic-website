@@ -12,8 +12,7 @@ const index = () => {
       <NavBar />
       <Hero
         classs="w-full h-screen bg-technology bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
-        heading="Let's get to know 
-each other"
+        heading="Let's get to know each other"
       />
       <TechnologyContent/>
       <VideoBanner/>
@@ -24,4 +23,4 @@ each other"
   );
 }
 
-export default index
+export default index;

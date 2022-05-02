@@ -1,19 +1,22 @@
 import React from 'react'
 import Heading from '../../../components/Heading';
-import TextCard from '../../../components/TextCard';
+import TextCard from '../../../components/textCard';
+import Link from 'next/link'
+import Odoo from '../innerpage/Odoo';
 const Services = () => {
   return (
     <div className="container px-5 py-14 mx-auto">
       <Heading heading="Our Services" />
       <div className="grid sm:grid-cols-2 xl:grid-cols-3">
-        <TextCard
-          heading="Odoo"
-          desc="On-demand open object known as odoo is by far the most sought after erp-based business management software development framework available in the market in terms of efficiency, reliability, and security."
-        />
-        <TextCard
-          heading="AI/ML"
-          desc="Over the last half a decade, Artificial Intelligence has become an integral part of our routine without us even realising it. AI increased our productivity helping us streamline our energies and efforts."
-        />
+        <Link href={"/services/innerpage/Odoo"}>
+          <a className="cursor-pointer">
+            <TextCard
+              heading="AI/ML"
+              desc="Over the last half a decade, Artificial Intelligence has become an integral part of our routine without us even realising it. AI increased our productivity helping us streamline our energies and efforts."
+            />
+          </a>
+        </Link>
+
         <TextCard
           heading="Business Intelligence"
           desc="Bi is the umbrella term referring to data silo, data warehousing, data mining, interpretation & visualization using real-time report generation mechanism assisting in taking informed business decisions. "

@@ -20,6 +20,7 @@ module.exports = {
         'shinoj': "url('/assets/img/shinoj.png')",
         'heena': "url('/assets/img/heena.png')",
         'video': "url('/assets/img/banners/videobanner.png')",
+
       },
     },
   },

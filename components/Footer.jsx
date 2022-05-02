@@ -8,10 +8,9 @@ const Footer = () => {
           <div className=" space-y-3 border-1 rounded-xl hover:shadow-lg">
             <Image
               src="/assets/img/logo-2.png"
-              width={300}
-              height={100}
-              layout="fixed"
-              alt='Logo'
+              width={250}
+              height={85}
+              alt="Logo"
             />
             <p className="text-white font-bold text-xl py-2 md:p-1">
               An Innovation-Driven Company
@@ -21,6 +20,40 @@ const Footer = () => {
               People. We Believe, Respect, And See The Vision Can Support An
               Idea And Make It A Reality.
             </p>
+            <div className="d-flex pt-4">
+              <a href="" className="mr-5">
+                <Image
+                  src="/assets/img/social/instagram.svg"
+                  width={40}
+                  height={40}
+                  alt="Instagram"
+                />
+              </a>
+              <a href="" className="mx-5">
+                <Image
+                  src="/assets/img/social/linkedin.svg"
+                  width={40}
+                  height={40}
+                  alt="Linkedin"
+                />
+              </a>
+              <a href="" className="mx-5">
+                <Image
+                  src="/assets/img/social/facebook.svg"
+                  width={40}
+                  height={40}
+                  alt="Facebook"
+                />
+              </a>
+              <a href="" className="mx-5">
+                <Image
+                  src="/assets/img/social/pinterest.svg"
+                  width={40}
+                  height={40}
+                  alt="Pinterest"
+                />
+              </a>
+            </div>
           </div>
           <div className=" px-0  border-1 rounded-xl hover:shadow-lg lg:text-center ">
             <h1 className="text-2xl font-bold text-gray-700 capitalize dark:text-white px-2">

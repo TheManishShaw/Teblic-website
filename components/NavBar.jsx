@@ -5,10 +5,10 @@ import Image from "next/image";
 import logo from '../public/assets/img/logo.png'
 const navigation = [
   {id:1, name: "Services", href: "/services" },
-  {id:2, name: "Technology", href: "technology" },
-  {id:3, name: "About us", href: "about" },
-  {id:4, name: "Blogs", href: "blogs" },
-  {id:5, name: "Contact us", href: "contact" },
+  {id:2, name: "Technology", href: "/technology" },
+  {id:3, name: "About us", href: "/about" },
+  {id:4, name: "Blogs", href: "/blogs" },
+  {id:5, name: "Contact us", href: "/contact" },
 ];
 
 
@@ -20,7 +20,7 @@ const NavBar = () => {
     <div className="w-screen h-[80px] z-10 bg-zinc-100 fixed drop-shadow-lg">
       <div className="px-10 flex justify-between items-center w-full h-full">
         <div className="flex items-center">
-          <h1 className="text-3xl font-bold mr-4 sm:text-4xl">
+          <h1 className="text-3xl font-bold mr-4 mt-1 sm:text-4xl">
             <Link href={"/"}>
               <a className="cursor-pointer">
                 {" "}

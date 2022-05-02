@@ -72,12 +72,12 @@ Delight. Sustain."
                     <textarea
                       placeholder="Looking for..."
                       rows="2"
-                      className="appearance-none block w-full  text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      className="appearance-none block w-full  text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white "
                     ></textarea>
                   </div>
 
                   <button
-                    className="shadow bg-black hover:bg-zinc-300 focus:shadow-outline border-0 focus:outline-none text-white font-bold py-2 px-6 ml-3 rounded"
+                    className="shadow bg-black hover:bg-zinc-600 focus:shadow-outline border-0 focus:outline-none text-white font-bold py-2 px-6 ml-3 rounded"
                     type="submit"
                   >
                     Submit

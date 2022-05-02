@@ -7,11 +7,13 @@ const SingleBlog = (props) => {
         src={props.img}
         alt="Blog Images"
         width={1000}
-        height={500}
+        height={400}
         className="rounded-t-lg h-60 w-full object-cover"
       />
 
-      <header className=" text-xl font-bold p-3 px-9 mt-2">{props.title}</header>
+      <header className=" text-xl font-bold p-3 px-9 mt-2">
+        {props.title}
+      </header>
       <div className="px-5">
         <p className=" px-4 text-zinc-500">{props.desc}</p>
       </div>
