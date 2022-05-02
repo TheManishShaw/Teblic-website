@@ -9,7 +9,7 @@ const OdooContent = () => {
         say hi to Odoo
       </h1>
       <div className=" flex md:flex-row flex-col items-center">
-        <div className="lg:flex-grow xl:-mt-10 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 ">
+        <div className="lg:flex-grow xl:-mt-10 lg:-5 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 ">
           <p className="mb-5 leading-relaxed">
             Before garnering understanding on why tecblic, let us understand why
             odoo in the first place. On-demand open object known as odoo is by
