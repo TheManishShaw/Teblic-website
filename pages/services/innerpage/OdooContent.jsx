@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 const OdooContent = () => {
   return (
+    
     <section className="text-zinc-500 body-font container mx-auto  px-5 py-5 mb-10 ">
       <h1 className="title-font sm:text-4xl mt-5 text-gray-900 xl:text-5xl lg:text-3xl text-3xl  font-semibold uppercase">
         Meet the gamechanger,
