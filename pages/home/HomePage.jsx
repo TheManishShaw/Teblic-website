@@ -11,8 +11,8 @@ const Home = () => {
     <>
       <Hero
         classs="w-full h-screen bg-home bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
-        heading="Research. Innovate. 
-Delight. Sustain."
+        heading="Research. Innovate."
+        heading1="Delight. Sustain."
       />
       <Features />
       <About />

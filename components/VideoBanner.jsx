@@ -5,7 +5,7 @@ const VideoBanner = () => {
     <div className=" bg-video bg-no-repeat bg-cover bg-center object-cover">
       <div className="container w-full mx-auto px-6 py-10">
         <div className="flex items-center flex-wrap ">
-          <div className="w-full md:w-1/2 px-4">
+          <div className="w-full md:w-1/2">
             <Image
               className="rounded-lg"
               src="/assets/img/banners/video.png"
@@ -19,7 +19,7 @@ const VideoBanner = () => {
               <h5 className="mb-2 2xl:text-4xl md:text-sm lg:text-2xl  font-bold text-gray-900  p-3">
                 Let’s talk about Odoo 15: Future to simplify your business need
               </h5>
-              <p className=" 2xl:mb-4 xl:mb-4 lg:mb-4 md:mb-2 2xl:text-2xl text-left text-gray-500 xl:text-xl lg:text-sm md:text-xs sm:text-sm dark:text-gray-400">
+              <p className=" 2xl:mb-4 xl:mb-4 lg:mb-4 md:mb-2 2xl:text-2xl px-6 pb-3 text-left text-gray-500 xl:text-xl lg:text-sm md:text-xs sm:text-sm dark:text-gray-400">
                 Do you feel that your business needs polishing in terms of
                 processes you follow? Are you efficiently catering to the needs
                 of your target audience? Want to take the digital leap but can’t

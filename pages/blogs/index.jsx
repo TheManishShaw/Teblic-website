@@ -10,11 +10,11 @@ const index = () => {
       <NavBar />
       <Hero
         classs="w-full h-screen bg-blog bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
-        heading="Let's get to know 
-each other"
+        heading="Let's get to know "
+        heading1="each other"
       />
       <Blogs />
-     
+
       <Footer />
     </>
   );

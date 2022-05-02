@@ -11,11 +11,11 @@ const AboutPage = () => {
       <NavBar />
       <Hero
         classs="w-full h-screen bg-about bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
-        heading="We are Tecblic
-an innovation-driven company"
+        heading="We are Tecblic an"
+        heading1=" innovation-driven company"
       />
-      <Contents/>
-    <Footer/>
+      <Contents />
+      <Footer />
     </div>
   );
 }

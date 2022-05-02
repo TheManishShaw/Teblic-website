@@ -12,15 +12,15 @@ const index = () => {
       <NavBar />
       <Hero
         classs="w-full h-screen bg-service bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
-        heading="Let's get to know 
-each other"
+        heading="Let's get to know"
+        heading1="each other"
       />
 
-        <Services />
-        <VideoBanner/>
-        <Blogs/>
-        <Subscribe/>
-      <Footer/>
+      <Services />
+      <VideoBanner />
+      <Blogs />
+      <Subscribe />
+      <Footer />
     </div>
   );
 }
