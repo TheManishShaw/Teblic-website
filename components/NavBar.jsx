@@ -33,7 +33,7 @@ const NavBar = () => {
           {navigation.map((item) => (
             <li
               key={item.id}
-              className="px-4 font-normal hover:font-semibold transition ease-in-out delay-300"
+              className="px-4 font-semibold hover:text-zinc-500 hover:underline hover:underline-offset-2"
             >
               <Link href={item.href}>
                 <a>{item.name}</a>
