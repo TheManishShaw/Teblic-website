@@ -29,6 +29,7 @@ const blogcontent = [
     view: "100k",
     comment: "12",
     date: "30-12-2012",
+    
   },
   {
     id: 3,
