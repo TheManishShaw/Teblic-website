@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/dist/client/image';
-import Link from 'next/Link'
+import Link from 'next/link'
 const SingleBlog = (props) => {
   return (
     <div className=" rounded-xl shadow-xl bg-white hover:scale-105 hover:ease-in-out transition-all">
