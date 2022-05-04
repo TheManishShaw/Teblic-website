@@ -51,11 +51,15 @@ const Services = () => {
             />
           </a>
         </Link>
+        <Link href={"/services/Hire"}>
+          <a className="cursor-pointer">
+            <TextCard
+              heading="Hire Dedicated Resources"
+              desc="From building a website from scratch to developing a mobile application, bespoke app or even a software development project, resource hiring has shown increasing potential in every sphere of the IT industry. "
+            />
+          </a>
+        </Link>
 
-        <TextCard
-          heading="Hire Dedicated Resources"
-          desc="From building a website from scratch to developing a mobile application, bespoke app or even a software development project, resource hiring has shown increasing potential in every sphere of the IT industry. "
-        />
         <Link href={"/services/Web"}>
           <a className="cursor-pointer">
             <TextCard
@@ -64,7 +68,7 @@ const Services = () => {
             />
           </a>
         </Link>
-        <Link href={"/services/Web"}>
+        <Link href={"/services/Python"}>
           <a className="cursor-pointer">
             <TextCard
               heading="Python"

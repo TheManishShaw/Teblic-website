@@ -90,7 +90,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="mt-5 flex flex-col">
           <div className="sm:w-2/3 text-left py-6">
-            <p className="text-md text-white font-semibold mb-2">
+            <p className="text-md text-white font-normal mb-2 tracking-wider">
               © Copyright Tecblic 2020
             </p>
           </div>
