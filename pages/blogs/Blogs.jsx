@@ -8,12 +8,6 @@ const blogcontent = [
     title: "Odoo CRM Integration with Whatsapp Chatbot!",
     desc: "How can you streamline your business process Do your business plans, models, and process give the desired",
     category: "Web",
-    authimg:
-      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
-    authname: "Manish Shaw",
-    authdeg: "Author",
-    view: "120k",
-    comment: "12",
     date: "12-12-2022",
   },
   {
@@ -22,12 +16,7 @@ const blogcontent = [
     title: "Glimpse to the future of AI/ML",
     desc: "How can you streamline your business process Do your business plans, models, and process give the desired output?",
     category: "Web",
-    authimg:
-      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
-    authname: "Manish Shaw",
-    authdeg: "Author",
-    view: "100k",
-    comment: "12",
+  
     date: "30-12-2012",
     
   },
@@ -37,12 +26,6 @@ const blogcontent = [
     title: "Odoo 15: Future of business simplified",
     desc: "How can you streamline your business process Do your business plans, models, and process give the desired output?",
     category: "Web",
-    authimg:
-      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
-    authname: "Manish Shaw",
-    authdeg: "Author",
-    view: "20k",
-    comment: "12",
     date: "12-02-2021",
   },
 ];
@@ -63,11 +46,6 @@ const Blogs = () => {
               title={item.title}
               desc={item.desc}
               category={item.category}
-              authimg={item.authimg}
-              authname={item.authname}
-              authdeg={item.authdeg}
-              view={item.view}
-              comment={item.comment}
               date={item.date}
             />
           ))}
