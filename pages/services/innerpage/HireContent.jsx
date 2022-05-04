@@ -6,43 +6,31 @@ const HireContent = () => {
     <div className=" text-zinc-500 body-font container mx-auto  px-5 py-10 mb-10">
       <div className=" ">
         <h2 className="max-w-4xl xl:mb-14 font-sans xl:text-5xl md:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl text-3xl sm:leading-none">
-          OPTING FOR PYTHON IS LEAP
+          RELIEVE YOURSELF, HIRE
           <br className="xl:displat-block" />
-          OF EXPANSIONS.
+          CONTRACT RESOURCES.
         </h2>
       </div>
       <div className=" flex md:flex-row flex-col items-center py-5">
         <div className="lg:flex-grow xl:-mt-10 lg:-mt-5 md:w-full lg:pr-14 md:pr-10 flex flex-col md:items-start md:text-left md:mb-0 ">
-          <Desc desc="Python is a high-level object oriented and procedural language. It is one of the easiest and the most reliable languages for scripting codes" />
-          <Desc desc="Python is feature loaded with advantages of code portability, making code migration to other os easier as you transfer and run your codes. That means, coding can be done in one os and easily be transferred to the other os without any issue in the code." />
-          <Desc desc="Being one of the oldest developmental languages, python comes with an extensive library that makes it convenient for coders and developers and can be used for free. It has predefined classes that can be inherited and used for easy and quick development. Python is an open source language that gives it an added advantage." />
-          <Desc desc="Python being a rich programming language comes bundled with the advantage of importing and integration with other languages that means coders can code in languages such as javascript, node js and ruby on rails, these codes can be easily integrated with python and made use of." />
+          <Desc desc="From building a website from scratch to developing a mobile application, bespoke app or even a software development project, resource hiring has shown increasing potential in every sphere of the it industry. Doubled on popularity in the recent past, contract resources have assisted in giving a much-needed starting push to a no. of emerging businesses by substantially reducing staffing expenses." />
+          <Desc desc="It serves more as a bridging element between the end-client & professional. This empowers the companies to choose the right talent to work on their product while also assisting in timely delivery and maintaining transparency in communication." />
+          <Desc desc="Hiring resources has also proved to be cost efficient as a company will only be shelling out for the duration the resource is being utilized or as per the terms of the short contract." />
+          <Desc desc="It is one of the best means to create a pool of highly-skilled professionals that work dedicatedly on a project. This also minuses the full communication cycle and provides the space for direct and crisp interactions." />
+        <Desc desc="In the present corporate setup, it relieves the companies from the tiring task of resource planning. in times of urgency, the hire provider makes it convenient to add or replace the professional with another holding closer professional competence if not exactly the same. Contract hire empowers the client to choose the most suitable candidates of their choice and in the time of need. hire providers may also assist with resources at peak times."/>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-full w-5/6">
           <img
             className="object-cover object-center rounded"
             alt="Python"
-            src="/assets/img/python/python1.png"
+            src="/assets/img/web/hire.png"
           />
         </div>
       </div>
 
-      <Desc desc="Its application ranges from as simple as website development to web scraping, gaming, language development, software development and even artificial intelligence and machine learning integration." />
+      <Desc desc="While setting up a team would require hardware and functional spaces, resource hiring will greatly benefit the companies as it is generally remote and can be easily managed with limited interaction." />
 
-      <Desc desc="We are a flat hierarchy order company extending the freedom to innovate and research to every member of our team making it a collaborative endeavour. We are passionate for what we do and encourage a happy mind attitude creating a transparent and fully functional work atmosphere." />
-
-      <Desc
-        desc="Our efficient approach in bi leaning on tools like power bi and tableau
-        comes with possibilities of voice assistants interacting with your
-        business getting you to the most accurate reports defining your
-        strategic business planning and improving performance of your team."
-      />
-      <Desc desc="Tecblic ensures utmost attention to minute detailing and prioritizes the structure of consulting solutions making it of optimal value to the client." />
-      <Desc desc="As we have an illustrious understanding of global businesses and their functions which relieves our clients to introduce us to the core of their business.at tecblic, quality is ensured as we table the most refined, promising and lasting solutions with minimal cost of ownership and optimal return on investment." />
-      <ContentLink
-        href="/home/HomePage"
-        text="Connect With Us To Kick-Start Your Digital Transformation Journey."
-      />
+      <Desc desc="Resource hiring will save big on time & energy, as these professionals will not require to go through training and other on-boarding processes. Since the resources will be a part of the team exclusively on the need basis, it will reduce the tasks of familiarizing with work culture and introduction to company policies etc." />
     </div>
   );
 }
