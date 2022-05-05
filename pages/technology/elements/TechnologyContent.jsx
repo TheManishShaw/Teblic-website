@@ -11,7 +11,7 @@ const technology = [
   },
   {
     id: 2,
-    href: "#",
+    href: "/technology/Django",
     heading: "Django",
     desc: "Django is a high-level & popular python programming framework that has an active and thriving community of developers. it is simple yet powerful and highly scalable.",
   },
@@ -23,13 +23,13 @@ const technology = [
   },
   {
     id: 4,
-    href: "#",
+    href: "/technology/Flutter",
     heading: "Flutter",
     desc: "Flutter- crafted by google, flutter is an open-source ui software development kit based on dart programming language. it is one of the most popular cross-platform application development toolkit.",
   },
   {
     id: 5,
-    href: "#",
+    href: "/technology/Golang",
     heading: "Golang",
     desc: "Golang or popularly knowns as go is one of the most dynamic programming language that gained popularity ever since it was made publicly available in the year 2012.",
   },
@@ -41,7 +41,7 @@ const technology = [
   },
   {
     id: 7,
-    href: "#",
+    href: "/technology/Reactjs",
     heading: "React-Js",
     desc: "Creating amazing frontend user interface based on java script library comes handy when you choose react. it is free and open-source. reliability is easy as it is managed by tech giant meta and an open-source",
   },
