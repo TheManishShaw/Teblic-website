@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Footer from '../components/Footer';
-import Testing from '../components/Testing';
 import NavBar from '../components/NavBar'
 import styles from '../styles/Home.module.css'
 import HomePage from './home/HomePage';
