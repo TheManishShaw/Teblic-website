@@ -4,7 +4,7 @@ import Founder1 from './Founder1';
 
 const Contents = () => {
   return (
-    <div className="container px-5 py-14 mx-auto">
+    <div className="container px-12 py-14 mx-auto">
       <h2 className="text-3xl font-bold underline underline-offset-8 mb-5">
         About Tecblic
       </h2>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className="bg-zinc-100 px-4 py-5">
+    <section className="bg-zinc-100 px-10 py-5">
       <div className="container xl:py-7 md:py-10 lg:py-10 sm:py-10 mx-auto my-5 ">
         <h1 className=" text-3xl font-bold underline underline-offset-8 px-2 mb-4">
           About Tecblic

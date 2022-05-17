@@ -2,7 +2,7 @@ import React from 'react'
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 const contactWidget = (props) => {
   return (
-    <div className="container xl:py-14 md:py-10 lg:py-10 sm:py-10 mx-auto my-5  ">
+    <div className="container px-8 xl:py-14 md:py-10 lg:py-10 sm:py-10 mx-auto my-5  ">
       <div className="shadow-md rounded-lg border border-gray-100  ">
         <div className="grid grid-cols-1 gap-2  xl:gap-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols- sm:items-center xl:grid-cols-2">
           <div className="">

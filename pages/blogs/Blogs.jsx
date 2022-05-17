@@ -51,7 +51,7 @@ const blogcontent = [
 const Blogs = () => {
   return (
     <>
-      <div className="container px-5 py-12 mx-auto">
+      <div className="container px-8 py-12 mx-auto">
         <h1 className="text-3xl font-bold underline underline-offset-8 mb-10">
           Blogs
         </h1>

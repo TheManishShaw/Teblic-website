@@ -20,7 +20,7 @@ const Home = () => {
       <Tools />
       <Subscribe />
     
-      <div className="container xl:py-14 md:py-10 lg:py-10 sm:py-10 mx-auto my-5  ">
+      <div className="container px-8 xl:py-14 md:py-10 lg:py-10 sm:py-10 mx-auto my-5  ">
         <h1 className=" text-3xl font-bold underline underline-offset-8 px-1 mb-6">
           Contact Us
         </h1>
