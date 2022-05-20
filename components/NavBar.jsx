@@ -24,6 +24,7 @@ const NavBar = () => {
             <Link href={"/"}>
               <a className="cursor-pointer">
                 {" "}
+                
                 <Image src={logo} alt="Logo" />
               </a>
             </Link>
