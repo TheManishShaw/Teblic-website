@@ -11,6 +11,7 @@ const Home = () => {
     <>
       <Hero
         classs="w-full h-screen bg-home bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
+        priority
         heading="Research. Innovate."
         heading1="Delight. Sustain."
       />
@@ -20,7 +21,7 @@ const Home = () => {
       <Tools />
       <Subscribe />
 
-      <div className="container sm:px-1 xl:px-8 lg:px-8 md:px-8 xl:py-14 md:py-10 lg:py-10 sm:py-10 mx-auto my-5  ">
+      <div className="container sm:px-1 xl:px-8 lg:px-8 md:px-8 xl:py-14 md:py-10 lg:py-10 sm:py-10 mx-auto my-5 px-2  ">
         <h1 className=" text-3xl font-bold underline underline-offset-8 px-1 mb-6">
           Contact Us
         </h1>

@@ -2,9 +2,9 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className="bg-zinc-100 sm:px-2 xl:px-8 lg:px-8 md:px-8 py-5">
-      <div className="container xl:py-7 md:py-10 lg:py-10 sm:py-10 mx-auto my-5 ">
-        <h1 className=" text-3xl font-bold underline underline-offset-8 px-2 mb-4">
+    <section className="bg-zinc-100 2xl:px-52 xl:px-8 lg:px-25 xs:px-6  py-5">
+      <div className="container xl:py-7 md:py-10 lg:py-10 sm:py-10 my-5 px-4 ">
+        <h1 className=" text-3xl font-bold underline underline-offset-8 mb-4">
           About Tecblic
         </h1>
         <h4 className="text-2xl font-normal xl:mt-5 xl:mb-1">

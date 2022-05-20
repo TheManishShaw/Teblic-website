@@ -22,6 +22,9 @@ module.exports = {
         'video': "url('/assets/img/banners/videobanner.png')",
 
       },
+      boxShadow: {
+        'xl': '5px 35px 40px -5px rgba(0, 0, 0, 0.3)',
+      },
     },
   },
   plugins: [],

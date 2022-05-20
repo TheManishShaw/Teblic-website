@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const Footer = () => {
   return (
-    <footer className="footer bg-black relative pt-1">
+    <footer className="footer bg-black relative pt-1 px-3">
       <div className="container mx-auto sm:px-3 xl:px-8 lg:px-8 md:px-8">
         <div className="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
           <div className=" space-y-3 border-1 rounded-xl hover:shadow-lg">
@@ -24,32 +24,32 @@ const Footer = () => {
               <a href="" className="mr-5">
                 <Image
                   src="/assets/img/social/instagram.svg"
-                  width={40}
-                  height={40}
+                  width={30}
+                  height={30}
                   alt="Instagram"
                 />
               </a>
               <a href="" className="mx-5">
                 <Image
                   src="/assets/img/social/linkedin.svg"
-                  width={40}
-                  height={40}
+                  width={30}
+                  height={30}
                   alt="Linkedin"
                 />
               </a>
               <a href="" className="mx-5">
                 <Image
                   src="/assets/img/social/facebook.svg"
-                  width={40}
-                  height={40}
+                  width={30}
+                  height={30}
                   alt="Facebook"
                 />
               </a>
               <a href="" className="mx-5">
                 <Image
                   src="/assets/img/social/pinterest.svg"
-                  width={40}
-                  height={40}
+                  width={30}
+                  height={30}
                   alt="Pinterest"
                 />
               </a>

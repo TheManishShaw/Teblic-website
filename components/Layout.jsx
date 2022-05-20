@@ -1,10 +1,14 @@
 import React from 'react'
-const Layout = () => {
+import Footer from './Footer';
+import NavBar from './NavBar';
+const Layout = ({ children}) => {
   return (
-    <div className="container xl:py-10 md:py-10 lg:py-7 sm:py-10 mx-auto my-5">
-      
+    <div className="content">
+      <NavBar/>
+      { children}
+      <Footer/>
     </div>
   );
 }
 
-export default Layout
+export default Layout;

@@ -2,7 +2,7 @@ import React from 'react'
 
 const FeatureCard = (props) => {
   return (
-    <div className="p-8 space-y-3 border-1 rounded-xl hover:shadow-lg">
+    <div className="p-6 space-y-3 border-1 rounded-xl hover:shadow-lg">
       <h1 className="text-2xl font-bold text-gray-700 capitalize dark:text-black underline underline-offset-8 ">
         {props.heading}
       </h1>

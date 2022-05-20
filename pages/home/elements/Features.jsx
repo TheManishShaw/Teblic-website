@@ -3,7 +3,7 @@ import FeatureCard from './FeatureCard';
 
 const Features = () => {
   return (
-    <div className="container sm:px-1 xl:px-8 lg:px-8 md:px-8 xl:py-10 md:py-10 lg:py-7 sm:py-10 mx-auto my-5">
+    <div className="container 2xl:px-4 sm:px-1 xl:px-8 lg:px-2 md:px-8 xl:py-10 md:py-10 lg:py-7 sm:py-10 mx-auto my-5">
       <div className="grid sm:grid-cols-2 xl:grid-cols-3">
         <FeatureCard
           heading="Our Vision"
