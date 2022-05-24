@@ -78,7 +78,7 @@ const NavBar = () => {
           <div className="group inline-block relative">
             <Link href="/technology">
               <a className="text-gray-700 px-4 rounded inline-flex items-center">
-                Teachnology
+                Technology
               </a>
             </Link>
 

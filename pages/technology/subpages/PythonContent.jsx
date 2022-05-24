@@ -113,37 +113,29 @@ const PythonContent = () => {
         ))}
       </div>
       <div className=" flex md:flex-row flex-col items-center py-5">
-        {djangoContent.map((item) => (
-          <>
-            <div className="lg:max-w-sm lg:w-full md:w-full w-5/6">
-              <img
-                className="object-cover object-center rounded"
-                alt="Ai"
-                src={item.img}
-              />
-            </div>
-            <div className="lg:flex-grow xl:-mt-10 lg:-mt-5 md:w-full lg:pl-10 md:pl-10 flex flex-col md:items-start md:text-left md:mb-0 ">
-              <h2 className="text-2xl text-black font-normal">
-                {item.heading}
-              </h2>
-              <Desc key={item.id} desc={item.desc} desc2={item.desc} />
-              <Desc desc="Django is free & open source making it one of the most apt for large scale development."/>
-              <Desc desc="It is one of the widely popular frameworks among the developers following its reusability and extensive libraries. Many popular platforms including national geographic & instagram too function and trust Django. its traffic management efficiencies make it a comprehensive platform to work on." />
-            </div>
-          </>
-        ))}
+        <div className="lg:max-w-sm lg:w-full md:w-full w-5/6">
+          <img
+            className="object-cover object-center rounded"
+            alt="Ai"
+            src="/assets/img/python/django.png"
+          />
+        </div>
+        <div className="lg:flex-grow xl:-mt-10 lg:-mt-5 md:w-full lg:pl-10 md:pl-10 flex flex-col md:items-start md:text-left md:mb-0 ">
+          <h2 className="text-2xl text-black font-normal">Django</h2>
+         
+          <Desc desc="Django is free & open source making it one of the most apt for large scale development." />
+          <Desc desc="It is one of the widely popular frameworks among the developers following its reusability and extensive libraries. Many popular platforms including national geographic & instagram too function and trust Django. its traffic management efficiencies make it a comprehensive platform to work on." />
+        </div>
       </div>
       <div className=" flex md:flex-row flex-col items-center py-5">
         {RpaContent.map((item) => (
           <>
-            
             <div className="lg:flex-grow xl:-mt-10 lg:-mt-5 md:w-full lg:pr-10 md:pr-10 flex flex-col md:items-start md:text-left md:mb-0">
               <h2 className="text-2xl text-black font-normal">
                 {item.heading}
               </h2>
               <Desc key={item.id} desc={item.desc} desc2={item.desc} />
-              <Desc desc="Automation is directly touching lives of billions making them more efficient and productive at work by increasing focus on more vital and result-driven actions fuelling growth of the organization. Automation is reducing the no. of petty and repetitive tasks at hands with individuals thus increasing the overall efficiency and reducing the total time consumption in performing one task."/>
-             
+              <Desc desc="Automation is directly touching lives of billions making them more efficient and productive at work by increasing focus on more vital and result-driven actions fuelling growth of the organization. Automation is reducing the no. of petty and repetitive tasks at hands with individuals thus increasing the overall efficiency and reducing the total time consumption in performing one task." />
             </div>
             <div className="lg:max-w-sm lg:w-full md:w-full w-5/6">
               <img
