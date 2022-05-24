@@ -76,7 +76,7 @@ const Footer = () => {
             </div>
           </div>
           <div className=" px-0  border-1 rounded-xl hover:shadow-lg lg:text-center ">
-            <h1 className="text-2xl font-bold text-gray-700 capitalize dark:text-white px-2">
+            <h1 className="text-2xl font-bold text-white capitalize  px-2">
               Menu
             </h1>
 
@@ -88,7 +88,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className=" space-y-2 sm:p-1">
-            <h1 className="text-2xl font-bold text-gray-700 capitalize dark:text-white">
+            <h1 className="text-2xl font-bold text-white capitalize ">
               Our Offices
             </h1>
             <p className="text-white font-bold text-xl">India</p>

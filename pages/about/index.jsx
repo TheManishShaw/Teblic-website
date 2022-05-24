@@ -7,11 +7,10 @@ const AboutPage = () => {
   return (
     <div>
       <Head>
-        <title>About - Tecblic</title>
+        <title>About</title>
       </Head>
       <Hero
-        className="w-full h-screen bg-about bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
-        priority
+        className="w-full h-screen bg-technology bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
         heading="We are Tecblic an"
         heading1=" innovation-driven company"
       />
