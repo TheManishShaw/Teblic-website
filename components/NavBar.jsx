@@ -114,7 +114,7 @@ const NavBar = () => {
           ))}
         </ul>
 
-        <div className="md:hidden" onClick={handleClick}>
+        <div className="md:hidden pr-5" onClick={handleClick}>
           {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
         </div>
       </div>
