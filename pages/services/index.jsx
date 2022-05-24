@@ -1,5 +1,5 @@
 import React from 'react'
-import Head from "next/head";
+import Head from "next/dist/shared/lib/head";
 import Hero from '../../components/Hero';
 import Services from './elements/Services';
 import VideoBanner from '../../components/VideoBanner';
@@ -26,4 +26,4 @@ const index = () => {
   );
 }
 
-export default index
+export default index;

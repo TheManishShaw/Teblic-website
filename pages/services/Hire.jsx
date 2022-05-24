@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from "next/head";
+import Head from "next/dist/shared/lib/head";
 import InnerPage from '../../components/InnerPage';
 import HireContent from './innerpage/HireContent';
 const Hire = () => {

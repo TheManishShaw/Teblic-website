@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image';s
+import Image from 'next/image';
 const VideoBanner = () => {
   return (
     <div className=" bg-video bg-no-repeat bg-cover bg-center object-cover">

@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/dist/client/image';
-import Link from 'react-scroll/modules/components/Link';
 const SingleBlog = (props) => {
   return (
     <div className=" rounded-xl shadow-xl bg-white hover:scale-105 hover:ease-in-out transition-all">
