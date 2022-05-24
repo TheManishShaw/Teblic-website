@@ -1,6 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from 'react-scroll/modules/components/Link';
+import Image from 'next/image';s
 const VideoBanner = () => {
   return (
     <div className=" bg-video bg-no-repeat bg-cover bg-center object-cover">
