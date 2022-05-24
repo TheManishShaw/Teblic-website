@@ -10,7 +10,7 @@ const AboutPage = () => {
         <title>About - Tecblic</title>
       </Head>
       <Hero
-        classs="w-full h-screen bg-about bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
+        className="w-full h-screen bg-about bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
         priority
         heading="We are Tecblic an"
         heading1=" innovation-driven company"
