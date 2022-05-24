@@ -27,8 +27,8 @@ const SingleBlog = (props) => {
           <p className=" px-4 text-zinc-500">{props.desc}</p>
         </div>
       </a>
-      <footer className="text-left py-2 px-5 text-gray-500">
-        <div className="flex items-center flex-wrap mt-2">
+      <footer className="text-left  py-2 px-5 text-gray-500 mb-2">
+        <div className="flex items-center  inset-x-0 bottom-0 flex-wrap mt-2">
           <a aria-label="Author" title="Author" className="mr-3">
             <img
               src={props.authimg}

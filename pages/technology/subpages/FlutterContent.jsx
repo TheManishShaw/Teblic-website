@@ -68,7 +68,7 @@ const FlutterContent = () => {
         <div className="lg:max-w-lg lg:w-full md:w-full w-5/6">
           <img
             className="object-cover object-center rounded"
-            alt="Ai"
+            alt="Flutter"
             src="/assets/img/flutter/flutter.png"
           />
         </div>
@@ -77,7 +77,7 @@ const FlutterContent = () => {
         <div className="lg:max-w-lg lg:w-full md:w-full w-5/6">
           <img
             className="object-cover object-center rounded"
-            alt="Ai"
+            alt="Flutter"
             src="/assets/img/flutter/flutter1.png"
           />
         </div>
