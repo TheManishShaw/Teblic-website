@@ -1,18 +1,25 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'react-scroll/modules/components/Link';
 const VideoBanner = () => {
   return (
     <div className=" bg-video bg-no-repeat bg-cover bg-center object-cover">
       <div className="container w-full mx-auto px-6 py-10">
         <div className="flex items-center flex-wrap ">
           <div className="w-full md:w-1/2">
-            <Image
-              className="rounded-lg"
-              src="/assets/img/banners/video.png"
-              alt="use the force"
-              width={1000}
-              height={510}
-            />
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=yI1efQG5954"
+            >
+              <Image
+                className="rounded-lg"
+                src="/assets/img/banners/video.png"
+                alt="use the force"
+                width={1000}
+                height={510}
+              />
+            </a>
           </div>
           <div className="w-full md:w-1/2   rounded-md h-full  sm:p-4 ">
             <div className="2xl:p-10 xl:p-7 lg:p-7 md:p-2 sm:p-5 w-full h-full text-center bg-white rounded-lg  shadow-md ">
