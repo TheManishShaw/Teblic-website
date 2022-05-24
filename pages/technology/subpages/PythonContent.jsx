@@ -36,12 +36,13 @@ const pythonoutercontent = [
     desc: "Do You Want To Give Your Business A Python Push? Connect With Tecblic And Witness Change.",
   },
 ];
+const newLocal = "/assets/img/python/ai.png";
 const AiMlContent = [
   {
     id: 1,
     heading: "AI/ML",
     desc: "Artificial intelligence is the human-like simulation of intelligence. It is trained to take certain defined actions and make predictions based on previously categorized data.",
-    img: "/assets/img/python/ai.png",
+    img: newLocal,
   },
 ];
 const djangoContent = [
