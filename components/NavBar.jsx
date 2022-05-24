@@ -28,22 +28,7 @@ const technology = [
   { id: 7, name: "React Js", href: "/technology/Reactjs" },
 ];
 
-const onTabHandler = () =>{
-  return (
-    <>
-      <li className="border-b-2 py-3 border-zinc-300 w-full flex justify-between">
-        <Link href="/technology">
-          <a>Tehnology</a>
-        </Link>
-        <ul className="">
-          <li className="text-xl font-bold">
-            <a>testing</a>
-          </li>
-        </ul>
-      </li>
-    </>
-  );
-}
+
 
 const NavBar = () => {
    const [tap, setTap] = useState(false);
@@ -52,11 +37,16 @@ const NavBar = () => {
   const [serviceTap, setserviceTap] = useState(false);
   const onTabHandlertech = () => setserviceTap(!serviceTap);
   const handleClick = () => setNav(!nav);
+  const navLink = ({ isActive }) =>{
+    return{
+      fontWeight: isActive ? 'bold' : ''
+    }
+  }
   return (
     <div className="w-screen h-[80px] z-20 bg-zinc-100 fixed drop-shadow-lg ">
       <div className=" 2xl:px-36 xl:px-5 lg:pl-2 md:px-3 sm:px-2 xs:px-2 px-2  flex justify-between items-center w-full h-full">
         <div className="flex items-center">
-          <h1 className="text-3xl font-bold mr-4 mt-1 sm:text-4xl">
+          <h1 className="text-3xl font-bold mr-4 mt-1 sm:text-4xl font">
             <Link href={"/"}>
               <a className="cursor-pointer">
                 {" "}

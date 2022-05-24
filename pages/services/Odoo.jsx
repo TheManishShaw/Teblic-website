@@ -7,7 +7,7 @@ const Odoo = () => {
   return (
     <div>
       <Head>
-        <title>Odoo</title>
+        <title>Odoo - Tecblic</title>
       </Head>
       <InnerPage heading="think odoo" heading2="think tecblic" />
       <OdooContent />

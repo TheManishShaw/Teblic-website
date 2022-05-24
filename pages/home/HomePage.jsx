@@ -6,9 +6,13 @@ import Blogs from '../blogs/Blogs';
 import About from './elements/About';
 import Features from './elements/Features';
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import Head from 'next/dist/shared/lib/head';
 const Home = () => {
   return (
     <>
+      <Head>
+        <title>Home - Tecblic</title>
+      </Head>
       <Hero
         classs="w-full h-screen bg-home bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
         priority

@@ -9,7 +9,7 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Services</title>
+        <title>Services - Tecblic</title>
       </Head>
       <Hero
         classs="w-full h-screen bg-service bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"

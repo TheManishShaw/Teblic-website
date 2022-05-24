@@ -8,9 +8,8 @@ const blogcontent = [
     title: "Odoo CRM Integration with Whatsapp Chatbot!",
     desc: "How can you streamline your business process Do your business plans, models, and process give the desired",
     category: "Web",
-    authimg:
-      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
-    authname: "Manish Shaw",
+    authimg: "/favicon.png",
+    authname: "Tecblic",
     authdeg: "Author",
     view: "120k",
     comment: "12",
@@ -22,14 +21,12 @@ const blogcontent = [
     title: "Glimpse to the future of AI/ML",
     desc: "How can you streamline your business process Do your business plans, models, and process give the desired output?",
     category: "Web",
-    authimg:
-      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
-    authname: "Manish Shaw",
+    authimg: "/favicon.png",
+    authname: "Tecblic",
     authdeg: "Author",
     view: "100k",
     comment: "12",
     date: "30-12-2012",
-    
   },
   {
     id: 3,
@@ -37,9 +34,8 @@ const blogcontent = [
     title: "Odoo 15: Future of business simplified",
     desc: "How can you streamline your business process Do your business plans, models, and process give the desired output?",
     category: "Web",
-    authimg:
-      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
-    authname: "Manish Shaw",
+    authimg: "/favicon.png",
+    authname: "Tecblic",
     authdeg: "Author",
     view: "20k",
     comment: "12",

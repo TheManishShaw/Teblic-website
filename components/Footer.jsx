@@ -21,7 +21,12 @@ const Footer = () => {
               Idea And Make It A Reality.
             </p>
             <div className="d-flex pt-4">
-              <a href="" className="mr-5">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/tecblic/"
+                className="mr-5"
+              >
                 <Image
                   src="/assets/img/social/instagram.svg"
                   width={30}
@@ -29,7 +34,12 @@ const Footer = () => {
                   alt="Instagram"
                 />
               </a>
-              <a href="" className="mx-5">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/company/tecblic/mycompany/"
+                className="mx-5"
+              >
                 <Image
                   src="/assets/img/social/linkedin.svg"
                   width={30}
@@ -37,7 +47,12 @@ const Footer = () => {
                   alt="Linkedin"
                 />
               </a>
-              <a href="" className="mx-5">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/tecblic/?ref=pages_you_manage"
+                className="mx-5"
+              >
                 <Image
                   src="/assets/img/social/facebook.svg"
                   width={30}
@@ -45,7 +60,12 @@ const Footer = () => {
                   alt="Facebook"
                 />
               </a>
-              <a href="" className="mx-5">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/tecblic"
+                className="mx-5"
+              >
                 <Image
                   src="/assets/img/social/pinterest.svg"
                   width={30}

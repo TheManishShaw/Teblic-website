@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
     <div>
       <Head>
-        <title>About</title>
+        <title>About - Tecblic</title>
       </Head>
       <Hero
         classs="w-full h-screen bg-about bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
