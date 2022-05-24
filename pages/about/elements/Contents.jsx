@@ -90,7 +90,7 @@ const Contents = () => {
           </div>
         </div>
       </div>
-      <Founder
+      {/* <Founder
         className="h-48 lg:h-auto lg:w-48 flex-none bg-cover  lg:rounded-t-none lg:rounded-l text-center bg-shinoj overflow-hidden"
         about="Mr. shinoj nair co-founder of the company, having nearly 15+ years of experience in the it industry. He is an eminent individual who has a vision of bridging the gap between business requirements and the technology. Mr. shinoj nair has been coming from a technology background and provides a culture of learning and amazing opportunities to individuals to grow. Over the years, he has been helping companies go from being smbs to enterprises."
         name="Shinoj Nair"
@@ -101,7 +101,7 @@ const Contents = () => {
         about="With more than 10 years of experience in software development and project management, she collaborates with the teams and ensures smooth delivery of the projects. She has a strong creative vision with an understanding of business objectives and proven expertise in concept development."
         name="Heena Nair"
         designation="Founder"
-      />
+      /> */}
     </div>
   );
 }
