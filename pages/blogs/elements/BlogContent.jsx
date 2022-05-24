@@ -38,7 +38,7 @@ const BlogContent = () => {
                       className="
                       text-base text-body-color
                       leading-relaxed
-                      mb-8
+                      mb-6
                       wow
                       fadeInUp
                     "
@@ -54,7 +54,7 @@ const BlogContent = () => {
                       className="
                       text-base text-body-color
                       leading-relaxed
-                      mb-10
+                      mb-6
                       wow
                       fadeInUp
                     "
@@ -66,64 +66,49 @@ const BlogContent = () => {
                       management tool, it is smoother to come together and work
                       towards a collective goal like never before.{" "}
                     </p>
-                    <h3
-                      className="
-                      font-bold
-                      mb-8
-                      text-dark text-2xl
-                      sm:text-[26px]
-                      wow
-                      fadeInUp
-                    "
-                      data-wow-delay=".1s"
-                    >
-                      Accounting:
-                    </h3>
+
                     <p
                       className="
                       text-base text-body-color
                       leading-relaxed
-                      mb-10
+                      mb-6
                       wow
                       fadeInUp
                     "
                       data-wow-delay=".1s"
                     >
-                      Traditional accounting could be tiresome in today’s
-                      fast-paced life. Odoo-15’s powerful OCR, revamped accounts
-                      forms makes it convenient to keep a track of previous
-                      transactions and generate customer invoices faster.
+                      <b> Accounting:</b> Traditional accounting could be
+                      tiresome in today’s fast-paced life. Odoo-15’s powerful
+                      OCR, revamped accounts forms makes it convenient to keep a
+                      track of previous transactions and generate customer
+                      invoices faster.
                     </p>
 
-                    <h3
-                      className=" font-bold mb-8 text-dark text-2xl sm:text-[26px] wow fadeInUp"
-                      data-wow-delay=".1s"
-                    >
-                      What is it with your ideas?
-                    </h3>
-
                     <p
-                      className="text-base text-body-color leading-relaxed mb-8 wow fadeInUp"
+                      className="text-base text-body-color leading-relaxed mb-6 wow fadeInUp"
                       data-wow-delay=".1s"
                     >
-                      At quo cetero fastidii. Usu ex ornatus corpora sententiae,
-                      vocibus deleniti ut nec. Ut enim eripuit eligendi est, in
-                      iracundia signiferumque quo. Sed virtute suavitate
-                      suscipiantur ea, dolor this can eloquentiam ei pro. Suas
-                      adversarium interpretaris eu sit, eum viris impedit ne.
-                      Erant appareat corrumpit ei vel.
+                      Rely on Odoo-15 and never count any account twice,
+                      “Control Domains” minuses the chance of counting single
+                      account multiple times. Payments can be recorded in list
+                      view giving you an accurate total. Odoo-15 can partially
+                      reconcile invoices and bills. Ability to fully reconcile
+                      underpayments through payment tolerance mechanism is
+                      added.
                     </p>
                     <p
                       className="
-                      text-base text-body-color leading-relaxed mb-11 wow fadeInUp"
+                      text-base text-body-color leading-relaxed mb-6 wow fadeInUp"
                       data-wow-delay=".1s"
                     >
-                      At quo cetero fastidii. Usu ex ornatus corpora sententiae,
-                      vocibus deleniti ut nec. Ut enim eripuit eligendi est, in
-                      iracundia signiferumque quo. Sed virtute suavitate
-                      suscipiantur ea, dolor this can eloquentiam ei pro. Suas
-                      adversarium interpretaris eu sit, eum viris impedit ne.
-                      Erant appareat corrumpit ei vel.
+                      <b>Appointments:</b> With Odoo-15, users can now send
+                      custom invitations via SMS or email methods. Setting
+                      reminders via notifications and emails in meetings section
+                      in online appointments makes it simple keeping your day on
+                      track. Define your meeting type with color schemed tags
+                      and set priority. With slots, defining from and to dates
+                      in appointments now comes handy. With Odoo 15, you can now
+                      generate leads and opportunity from booked meetings.
                     </p>
                   </div>
                 </div>

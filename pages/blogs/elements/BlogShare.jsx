@@ -4,39 +4,19 @@ const BlogShare = () => {
   return (
     <>
       <div className="flex flex-wrap items-center -mx-4 mb-12">
-        <div className="w-full md:w-1/2 px-4">
-          <div className="flex items-center flex-wrap mt-2">
-            <a aria-label="Author" title="Author" className="mr-3">
-              <img
-                src="/favicon.png"
-                alt="avatar"
-                className="object-cover w-10 h-10 rounded-full shadow-sm"
-              />
-            </a>
-            <div>
-              <a
-                aria-label="Author"
-                title="Author"
-                className="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400"
-              >
-                Manish shaw
-              </a>
-              <p className="text-sm font-medium leading-4 text-gray-600">
-                Developer
-              </p>
-            </div>
-          </div>
+        <div className="w-full md:w-2/4 px-4">
+          <div className="flex items-center flex-wrap "></div>
         </div>
-        <div className="w-full md:w-1/2 px-4">
+        <div className="w-full md:w-2/4 px-4">
           <div
-            className="flex items-center md:justify-end wow fadeInUp"
+            className="flex justify-end wow fadeInUp"
             data-wow-delay=".1s"
           >
-            <span className="text-sm text-body-color font-medium mr-5">
+            <span className="text-sm mt-2   text-body-color font-medium mr-4">
               Share This Post
             </span>
             <div className="flex items-center">
-              <a href="javascript:void(0)" className="mr-4 mb-2">
+              <a href="#" className="mr-4 mb-2">
                 <svg
                   width="32"
                   height="32"
@@ -54,7 +34,7 @@ const BlogShare = () => {
                   />
                 </svg>
               </a>
-              <a href="javascript:void(0)" className="mr-4 mb-2">
+              <a href="#" className="mr-4 mb-2">
                 <svg
                   width="32"
                   height="33"
@@ -70,7 +50,7 @@ const BlogShare = () => {
                   />
                 </svg>
               </a>
-              <a href="javascript:void(0)" className="mb-2">
+              <a href="#" className="mb-2">
                 <svg
                   width="33"
                   height="32"

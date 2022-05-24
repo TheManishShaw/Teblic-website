@@ -5,7 +5,7 @@ const BlogBanner = () => {
     <>
       <div
         className="relative  rounded overflow-hidden z-10 mb-[60px] h-[300px] md:h-[400px] lg:h-[500px] wow fadeInUp"
-        data-wow-delay=".1s"
+        data-wow-delay=".2s"
       >
         <img
           src="/assets/img/banners/blog.png"
@@ -21,7 +21,7 @@ const BlogBanner = () => {
               <p className="text-base text-white font-medium">
                 By{" "}
                 <a
-                  href="javascript:void(0)"
+                  href="#"
                   className="text-white font-semibold hover:opacity-70"
                 >
                   Tecblic
