@@ -3,12 +3,12 @@ import React from 'react'
 const RecentBlog = () => {
   return (
     <>
-      <div className="w-full lg:w-4/12 px-5 py-4 h-auto">
+      <div className="w-full lg:w-4/12 px-5 py-4  shadow-lg rounded-lg">
         <div>
-          <div className="flex flex-wrap -mx-4 mb-8">
+          <div className="flex flex-wrap -mx-4 mb-2">
             <div className="w-full px-4">
               <h2
-                className=" font-semibold text-dark text-2xl sm:text-[28px] pb-5 relative wow fadeInUp"
+                className=" font-semibold text-dark text-2xl sm:text-[28px] pt-4 relative wow fadeInUp"
                 data-wow-delay=".1s"
               >
                 Popular Articles

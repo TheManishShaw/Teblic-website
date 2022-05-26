@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'react-scroll/modules/components/Link';
 const Footer = () => {
   return (
     <footer className="footer bg-black relative pt-1 px-3">
@@ -81,10 +82,22 @@ const Footer = () => {
             </h1>
 
             <ul className="">
-              <li className="text-white py-3">Services</li>
-              <li className="text-white py-3">Technology</li>
-              <li className="text-white py-3">About Us</li>
-              <li className="text-white py-3">Contact Us</li>
+              <li className="text-white py-3">
+                <a className="cursor-pointer"> Services</a>
+              </li>
+              <li className="text-white py-3">
+                <a className="cursor-pointer"> Technology</a>
+              </li>
+              <li className="text-white py-3">
+                <a h className="cursor-pointer">
+                  {" "}
+                  About Us
+                </a>
+              </li>
+              <li className="text-white py-3">
+                {" "}
+                <a className="cursor-pointer"> Contact Us</a>
+              </li>
             </ul>
           </div>
           <div className=" space-y-2 sm:p-1">
@@ -93,7 +106,8 @@ const Footer = () => {
             </h1>
             <p className="text-white font-bold text-xl">India</p>
             <p className="text-white">
-              A-305 Stellar complex, Sindhu Bhavan Road, Ahmedabad- 380054.
+              510/511, Shivalik Shilp 2, Judges Bunglow Rd, Vastrapur,
+              Ahmedabad, Gujarat 380015
             </p>
 
             <p className="text-white font-bold text-xl">Norway</p>

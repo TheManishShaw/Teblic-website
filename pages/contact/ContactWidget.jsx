@@ -1,12 +1,83 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
-const contactWidget = (props) => {
+import swal from "sweetalert";
+
+const ContactWidget = () => {
+  const [userData, setUserData] = useState({
+    firstname: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+   let name, value;
+  const postUserData = (event) =>{
+    name = event.target.name;
+    value = event.target.value;
+
+    setUserData({ ...userData, [name]:value })
+  };
+
+  const submitData = async (event) => {
+    event.preventDefault();
+    const { firstname, phone, email, subject, message } = userData;
+if (firstname && phone && email && subject && message) {
+  const res = fetch(
+    "https://tecblic-website-form-default-rtdb.asia-southeast1.firebasedatabase.app/userDatafrom.json",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstname,
+        phone,
+        email,
+        subject,
+        message,
+      }),
+    }
+  );
+  if (res) {
+    setUserData({
+      firstname: "",
+      phone: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+    swal.center;
+    swal({
+      title: "Thank you!",
+      text: "Your message has been successfully sent. We will contact you very soon!",
+      icon: "success",
+      button: "okay",
+    });
+  } else {
+    swal({
+      title: "Please fill empty fields",
+      text: "",
+      icon: "error",
+      button: "Okay",
+    });
+  }
+} else {
+  swal({
+    title: "Please fill empty fields",
+    text: "",
+    icon: "warning",
+    button: "Okay",
+  });
+}
+  };
+
+ 
   return (
-    <div className="container px-8 xl:py-14 md:py-10 lg:py-10 sm:py-10 mx-auto my-5  ">
+    <div className="container px-8 xl:py-14 md:py-10 lg:py-10 sm:py-10 mx-auto my-5">
       <div className="shadow-md rounded-lg border border-gray-100  ">
         <div className="grid grid-cols-1 gap-2  xl:gap-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols- sm:items-center xl:grid-cols-2">
           <div className="">
-            <form className="p-5">
+            <form className="p-5" method="POST">
               <h2 className="text-lg font-bold pb-5">
                 Let’s discuss the possibilities
               </h2>
@@ -16,7 +87,10 @@ const contactWidget = (props) => {
                     className=" block w-full  text-gray-900 border  rounded py-2 px-4  leading-tight focus:outline-none focus:bg-white"
                     id="grid-first-name"
                     type="text"
+                    name="firstname"
                     placeholder="You Are"
+                    value={userData.firstname}
+                    onChange={postUserData}
                   />
                 </div>
                 <div className="w-full md:w-1/2 px-3">
@@ -24,7 +98,10 @@ const contactWidget = (props) => {
                     className=" block w-full  text-gray-900 border  rounded py-2 px-4 mb-0 leading-tight focus:outline-none focus:bg-white"
                     id="grid-first-name"
                     type="phone"
+                    name="phone"
                     placeholder="Phone"
+                    value={userData.phone}
+                    onChange={postUserData}
                   />
                 </div>
               </div>
@@ -34,7 +111,10 @@ const contactWidget = (props) => {
                     className=" block w-full  text-gray-900 border  rounded py-2 px-4 mb-0 leading-tight focus:outline-none focus:bg-white"
                     id="grid-first-name"
                     type="text"
+                    name="email"
                     placeholder="Email"
+                    value={userData.email}
+                    onChange={postUserData}
                   />
                 </div>
                 <div className="w-full md:w-1/2 px-3">
@@ -42,7 +122,10 @@ const contactWidget = (props) => {
                     className=" block w-full  text-gray-900 border  rounded py-2 px-4 mb-0 leading-tight focus:outline-none focus:bg-white"
                     id="grid-first-name"
                     type="text"
+                    name="subject"
                     placeholder="Subject"
+                    value={userData.subject}
+                    onChange={postUserData}
                   />
                 </div>
               </div>
@@ -51,6 +134,9 @@ const contactWidget = (props) => {
                 <div className="w-full px-3">
                   <textarea
                     placeholder="Looking for..."
+                    value={userData.message}
+                    name="message"
+                    onChange={postUserData}
                     rows="2"
                     className="appearance-none block w-full  text-gray-900 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   ></textarea>
@@ -59,6 +145,7 @@ const contactWidget = (props) => {
                 <button
                   className="shadow bg-black hover:bg-zinc-600 focus:shadow-outline border-0 focus:outline-none text-white font-bold py-2 px-6 ml-3 rounded"
                   type="submit"
+                  onClick={submitData}
                 >
                   Submit
                 </button>
@@ -105,4 +192,4 @@ const contactWidget = (props) => {
   );
 }
 
-export default contactWidget
+export default ContactWidget;
