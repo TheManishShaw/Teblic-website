@@ -14,7 +14,7 @@ const index = () => {
         heading="Let's get to know"
         heading1="each other"
       />
-      <ContactWidget heading="" />
+      <ContactWidget heading=" " />
       <Subscribe />
     </>
   );
