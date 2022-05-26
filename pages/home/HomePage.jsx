@@ -113,7 +113,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
             <div className="p-5 w-full h-full">
               <iframe
                 title="Office Map address"
@@ -123,7 +122,7 @@ const Home = () => {
                 height="100%"
                 aria-hidden="false"
                 loading="lazy"
-              ></iframe>
+              ></iframe>  
             </div>
           </div>
         </div>
