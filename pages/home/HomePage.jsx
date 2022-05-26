@@ -107,7 +107,7 @@ const Home = () => {
                 <div className="flex pl-5">
                   <PhoneIcon className="h-6 text-black px-1 mt-2" />
                   <p className="px-2 font-normal py-2">
-                    {" "}
+                    {" "}  
                     <a href="tel:+44 7947772257"> +44 7947772257 </a>
                   </p>
                 </div>
