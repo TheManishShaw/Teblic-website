@@ -51,21 +51,20 @@ const GolangContent = () => {
   return (
     <div className=" text-zinc-500 body-font container mx-auto  px-5 py-10">
       <div className=" ">
-        <h2 className="max-w-4xl xl:mb-14 font-sans xl:text-5xl md:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl text-3xl sm:leading-none">
+        <h2 className="max-w-4xl xl:mb-8 font-sans xl:text-4xl md:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl text-3xl sm:leading-none">
           MAKE GO YOUR GO TO
-          <br className="xl:displat-block" />
           LANGUAGE.
         </h2>
       </div>
       <div className=" flex md:flex-row flex-col items-center py-5">
-        <div className="lg:max-w-lg lg:w-full md:w-full w-5/6">
+        <div className="lg:max-w-lg lg:w-full md:w-full">
           <img
             className="object-cover object-center rounded"
             alt="Golang"
             src="/assets/img/web/Golange.png"
           />
         </div>
-        <div className="lg:flex-grow xl:-mt-10 lg:-mt-5 md:w-full lg:pl-14 md:pl-10 flex flex-col md:items-start md:text-left md:mb-0 ">
+        <div className="lg:flex-grow  md:w-full lg:pl-14 md:pl-10 flex flex-col md:items-start md:text-left md:mb-0 ">
           {golangcontent.map((item) => (
             <Desc key={item.id} desc={item.desc} />
           ))}

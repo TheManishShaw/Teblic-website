@@ -1,6 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'react-scroll/modules/components/Link';
+import React from 'react';
+import Image from 'next/image';
 const Footer = () => {
   return (
     <footer className="footer bg-black relative pt-1 px-3">

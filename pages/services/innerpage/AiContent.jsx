@@ -27,12 +27,12 @@ const outer = [
 const AiContent = () => {
   return (
     <div className=" text-zinc-500 body-font container mx-auto  px-5 py-10 mb-10">
+      <InnerHeading
+        heading1=" EXPLORE POSSIBILITIES WITH ARTIFICIAL INTELLIGENCE"
+        heading2=""
+      />
       <div className="grid gap-12 row-gap-5 lg:grid-cols-2 items-center">
         <div className=" ">
-          <InnerHeading
-            heading1=" EXPLORE POSSIBILITIES WITH"
-            heading2="ARTIFICIAL INTELLIGENCE"
-          />
           {content.map((item) => (
             <Desc key={item.id} desc={item.desc} />
           ))}

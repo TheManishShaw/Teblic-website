@@ -43,14 +43,13 @@ const ReactContent = () => {
   return (
     <div className=" text-zinc-500 body-font container mx-auto  px-5 py-10">
       <div className=" ">
-        <h2 className="max-w-4xl xl:mb-14 font-sans xl:text-5xl md:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl text-3xl sm:leading-none">
+        <h2 className="max-w-4xl xl:mb-8 font-sans xl:text-4xl md:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl text-3xl sm:leading-none">
           LETS CRAFT INCREDIBLE
-          <br className="xl:displat-block" />
           FRONTEND
         </h2>
       </div>
       <div className=" flex md:flex-row flex-col items-center py-5">
-        <div className="lg:flex-grow xl:-mt-10 lg:-mt-5 md:w-full lg:pr-14 md:pr-10 flex flex-col md:items-start md:text-left md:mb-0 ">
+        <div className="lg:flex-grow  md:w-full lg:pr-10 md:pr-10 flex flex-col md:items-start md:text-left md:mb-0 ">
           {golangcontent.map((item) => (
             <>
               <h2 className="text-2xl text-black font-normal">
@@ -60,7 +59,7 @@ const ReactContent = () => {
             </>
           ))}
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-full w-5/6">
+        <div className="lg:max-w-lg lg:w-full md:w-full">
           <img
             className="object-cover object-center rounded"
             alt="React"

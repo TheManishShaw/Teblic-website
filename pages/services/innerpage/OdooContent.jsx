@@ -5,11 +5,11 @@ const OdooContent = () => {
     <section className="text-zinc-500 body-font container mx-auto  px-5 py-5 mb-10 ">
       <h1 className="title-font sm:text-4xl mt-5 text-gray-900 xl:text-5xl lg:text-3xl text-3xl  font-semibold uppercase">
         Meet the gamechanger,
-        <br className="hidden lg:inline-block" />
+        
         say hi to Odoo
       </h1>
       <div className=" flex md:flex-row flex-col items-center">
-        <div className="lg:flex-grow xl:-mt-10 lg:-mt-5 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 ">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 ">
           <p className="mb-5 leading-relaxed">
             Before garnering understanding on why tecblic, let us understand why
             odoo in the first place. On-demand open object known as odoo is by
@@ -56,7 +56,7 @@ const OdooContent = () => {
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-10 lg:pr-5 md:pl-16  flex flex-col md:items-start md:text-left  md:mb-0 ">
-          <p className="mb-5 leading-relaxed pt-10">
+          <p className="mb-5 leading-relaxed">
             Depending on the client’s requirements, tecblic can provide odoo
             integration with third party modules such as whatsapp and other
             popular social media integrations, payment gateways, and sms

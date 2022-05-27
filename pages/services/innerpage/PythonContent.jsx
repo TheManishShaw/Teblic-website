@@ -5,9 +5,8 @@ const PythonContent = () => {
   return (
     <div className=" text-zinc-500 body-font container mx-auto  px-5 py-10 mb-10">
       <div className=" ">
-        <h2 className="max-w-4xl xl:mb-14 font-sans xl:text-5xl md:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl text-3xl sm:leading-none">
-          OPTING FOR PYTHON IS LEAP
-          <br className="xl:displat-block" />
+        <h2 className="max-w-4xl xl:mb-14 font-sans xl:text-4xl md:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl text-3xl sm:leading-none">
+          OPTING FOR PYTHON IS LEAP       
           OF EXPANSIONS.
         </h2>
       </div>

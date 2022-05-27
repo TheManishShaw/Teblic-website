@@ -5,9 +5,8 @@ const HireContent = () => {
   return (
     <div className=" text-zinc-500 body-font container mx-auto  px-5 py-10 mb-10">
       <div className=" ">
-        <h2 className="max-w-4xl xl:mb-14 font-sans xl:text-5xl md:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl text-3xl sm:leading-none">
+        <h2 className="max-w-4xl xl:mb-14 font-sans xl:text-4xl md:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl text-3xl sm:leading-none">
           RELIEVE YOURSELF, HIRE
-          <br className="xl:displat-block" />
           CONTRACT RESOURCES.
         </h2>
       </div>
@@ -19,7 +18,7 @@ const HireContent = () => {
           <Desc desc="It is one of the best means to create a pool of highly-skilled professionals that work dedicatedly on a project. This also minuses the full communication cycle and provides the space for direct and crisp interactions." />
         <Desc desc="In the present corporate setup, it relieves the companies from the tiring task of resource planning. in times of urgency, the hire provider makes it convenient to add or replace the professional with another holding closer professional competence if not exactly the same. Contract hire empowers the client to choose the most suitable candidates of their choice and in the time of need. hire providers may also assist with resources at peak times."/>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-full w-5/6">
+        <div className="lg:max-w-lg lg:w-full md:w-full ">
           <img
             className="object-cover object-center rounded"
             alt="Python"

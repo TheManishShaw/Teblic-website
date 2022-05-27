@@ -16,7 +16,7 @@ const WebAndPwa = () => {
             src="/assets/img/web/web.png"
           />
         </div>
-        <div className="lg:flex-grow xl:-mt-10 lg:-mt-5 md:w-full lg:pl-14 md:pl-10 flex flex-col md:items-start md:text-left md:mb-0 ">
+        <div className="lg:flex-grow  md:w-full lg:pl-14 md:pl-10 flex flex-col md:items-start md:text-left md:mb-0 ">
           <p className="mb-5 leading-relaxed md:text-lg">
             Websites have evolved as the most common and reliable source for
             gathering information in relation to any queries we may come across.
