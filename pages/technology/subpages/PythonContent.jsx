@@ -36,7 +36,7 @@ const pythonoutercontent = [
     desc: "Do You Want To Give Your Business A Python Push? Connect With Tecblic And Witness Change.",
   },
 ];
-const newLocal = "/assets/img/python/ai.png";
+const newLocal = "/assets/img/python/Ai.png";
 const AiMlContent = [
   {
     id: 1,
@@ -79,8 +79,8 @@ const PythonContent = () => {
         <div className="lg:max-w-lg lg:w-full md:w-full">
           <img
             className="object-cover object-center rounded"
-            alt="Ai"
-            src="/assets/img/python/python.png"
+            alt="Python"
+            src="/assets/img/python/Python.png"
           />
         </div>
       </div>
@@ -115,8 +115,8 @@ const PythonContent = () => {
         <div className="lg:max-w-sm lg:w-full md:w-full w-5/6">
           <img
             className="object-cover object-center rounded"
-            alt="Ai"
-            src="/assets/img/python/django.png"
+            alt="Django"
+            src="/assets/img/python/Django.png"
           />
         </div>
         <div className="lg:flex-grow xl:-mt-10 lg:-mt-5 md:w-full lg:pl-10 md:pl-10 flex flex-col md:items-start md:text-left md:mb-0 ">
