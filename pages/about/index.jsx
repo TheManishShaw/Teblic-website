@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Hero from "../../components/Hero";
 import Contents from "./elements/Contents";
+import Testing from "../../components/Testing";
 
 const AboutPage = () => {
   return (
@@ -16,6 +17,7 @@ const AboutPage = () => {
         heading1=" innovation-driven company"
       />
       <Contents />
+      <Testing/>
     </div>
   );
 };

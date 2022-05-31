@@ -1,7 +1,29 @@
 import React, { useState } from 'react';
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import swal from "sweetalert";
+const validateEmployee = (empData) => {
+  const errors = {};
 
+  if (!empData.Name) {
+    errors.Name = "Please Enter Employee Name";
+  } else if (empData.Name.length > 20) {
+    errors.Name = "Name cannot exceed 20 characters";
+  }
+
+  if (!empData.Location) {
+    errors.Location = "Please Enter Employee Location";
+  }
+
+  if (!empData.EmailId) {
+    errors.EmailId = "Please Enter Email ID";
+  } else if (
+    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(empData.EmailId)
+  ) {
+    errors.EmailId = "Invalid email address";
+  }
+
+  return errors;
+};
 const ContactWidget = () => {
   const [userData, setUserData] = useState({
     firstname: "",

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useRouter } from 'next/router'
+
 import { MenuIcon, XIcon ,ChevronRightIcon,ChevronDownIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import Image from "next/image";
@@ -31,6 +33,7 @@ const technology = [
 
 
 const NavBar = () => {
+  const router = useRouter();
    const [tap, setTap] = useState(false);
   const [nav, setNav] = useState(false);
   const onTabHandler = () => setTap(!tap);
@@ -59,7 +62,13 @@ const NavBar = () => {
         <ul className="hidden md:flex pr-28">
           <div className="group inline-block relative">
             <Link href="/services">
-              <a className="text-gray-700 px-4 rounded inline-flex items-center">
+              <a
+                className={`text-gray-700 px-4 rounded inline-flex items-center${
+                  router.pathname === "/services"
+                    ? "text-black font-bold underline underline-offset-2"
+                    : "hover:bg-zinc-100 hover:text-black"
+                }`}
+              >
                 Services
               </a>
             </Link>
@@ -67,7 +76,13 @@ const NavBar = () => {
               {services.map((item) => (
                 <li key={item.id} className="flex">
                   <Link href={item.href}>
-                    <a className=" rounded-md hover:underline hover:transition hover:underline-offset-2 duration-300 hover:font-semibold bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block whitespace-no-wrap">
+                    <a
+                      className={`rounded-md hover:underline hover:transition hover:underline-offset-2 duration-300 hover:font-semibold bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block whitespace-no-wrap ${
+                        router.pathname === item.href
+                          ? "text-black font-bold underline underline-offset-2"
+                          : "hover:bg-zinc-100 hover:text-black"
+                      }`}
+                    >
                       {item.name}
                     </a>
                   </Link>
@@ -77,7 +92,13 @@ const NavBar = () => {
           </div>
           <div className="group inline-block relative">
             <Link href="/technology">
-              <a className="text-gray-700 px-4 rounded inline-flex items-center">
+              <a
+                className={`text-gray-700 px-4 rounded inline-flex items-center ${
+                  router.pathname === "/technology"
+                    ? "text-black font-bold underline underline-offset-2"
+                    : "hover:bg-zinc-100 hover:text-black"
+                }`}
+              >
                 Technology
               </a>
             </Link>
@@ -86,7 +107,13 @@ const NavBar = () => {
               {technology.map((item) => (
                 <li key={item.id} className="flex">
                   <Link href={item.href}>
-                    <a className=" rounded-md hover:underline hover:transition hover:underline-offset-2 duration-300 hover:font-semibold bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block whitespace-no-wrap">
+                    <a
+                      className={`rounded-md hover:underline hover:transition hover:underline-offset-2 duration-300 hover:font-semibold bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block whitespace-no-wrap ${
+                        router.pathname === item.href
+                          ? "text-black font-bold underline underline-offset-2"
+                          : "hover:bg-zinc-100 hover:text-black"
+                      }`}
+                    >
                       {item.name}
                     </a>
                   </Link>
@@ -98,7 +125,15 @@ const NavBar = () => {
           {navigation.map((item) => (
             <li key={item.id} className="px-4 font-normal hover:text-zinc-500 ">
               <Link href={item.href}>
-                <a>{item.name}</a>
+                <a
+                  className={`${
+                    router.pathname === item.href
+                      ? "text-black font-bold underline underline-offset-2"
+                      : "hover:bg-zinc-100 hover:text-black"
+                  }`}
+                >
+                  {item.name}
+                </a>
               </Link>
             </li>
           ))}
@@ -112,7 +147,15 @@ const NavBar = () => {
       <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
         <li className="border-b-2 py-3 border-zinc-300 w-full flex justify-between">
           <Link href="/services">
-            <a>Services</a>
+            <a
+              className={`${
+                router.pathname === "/services"
+                  ? "text-black  underline font-bold underline-offset-2"
+                  : "hover:underline hover:underline-offset-2 hover:font-bold hover:text-black"
+              }`}
+            >
+              Services
+            </a>
           </Link>
           <ul className="">
             <li className="text-xl font-bold">
@@ -133,7 +176,13 @@ const NavBar = () => {
                   {services.map((item) => (
                     <li key={item.id} className="flex">
                       <Link href={item.href}>
-                        <a className="text-sm  hover:underline  hover:underline-offset-2  bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block font-normal">
+                        <a
+                          className={`text-sm font-normal hover:underline  hover:underline-offset-2  bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block${
+                            router.pathname === item.href
+                              ? "text-black  underline font-bold underline-offset-2"
+                              : "hover:bg-zinc-100 hover:font-bold hover:text-black"
+                          }`}
+                        >
                           {item.name}
                         </a>
                       </Link>
@@ -146,7 +195,15 @@ const NavBar = () => {
         </li>
         <li className="border-b-2 py-3 border-zinc-300 w-full flex justify-between">
           <Link href="/technology">
-            <a>Tehnology</a>
+            <a
+              className={`${
+                router.pathname === "/technology"
+                  ? "text-black  underline font-bold underline-offset-2"
+                  : "hover:underline hover:underline-offset-2 hover:font-bold hover:text-black"
+              }`}
+            >
+              Tehnology
+            </a>
           </Link>
           <ul className="">
             <li className="text-xl font-bold">
@@ -167,7 +224,13 @@ const NavBar = () => {
                   {technology.map((item) => (
                     <li key={item.id} className="flex">
                       <Link href={item.href}>
-                        <a className="text-sm  hover:underline  hover:underline-offset-2  bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block font-normal">
+                        <a
+                          className={`text-sm  hover:underline  hover:underline-offset-2  bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block font-normal ${
+                            router.pathname === item.href
+                              ? "text-black  underline font-bold underline-offset-2"
+                              : "hover:bg-zinc-100 hover:font-bold hover:text-black"
+                          }`}
+                        >
                           {item.name}
                         </a>
                       </Link>
@@ -184,7 +247,15 @@ const NavBar = () => {
             className="border-b-2 py-3 border-zinc-300 w-full flex justify-between"
           >
             <Link href={item.href}>
-              <a>{item.name}</a>
+              <a
+                className={`${
+                  router.pathname === item.href
+                    ? "text-black  underline font-bold underline-offset-2"
+                    : "hover:underline hover:underline-offset-2 hover:font-bold hover:text-black"
+                }`}
+              >
+                {item.name}
+              </a>
             </Link>
           </li>
         ))}

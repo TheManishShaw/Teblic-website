@@ -48,8 +48,8 @@ const Contents = () => {
         point out what makes our team unique, it’s our artistic approach towards
         the problems that require scientific solutions.
       </p>
-      <div className="flex gap-10">
-        <div className="max-w-2xl py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+      <div className=" flex flex-nowrap gap-10">
+        <div className="max-w-2xl py-4 px-8 bg-white shadow-lg rounded-lg my-20 xl:w-6/12 ">
           <div className="flex justify-center md:justify-start -mt-16">
             <img
               className="w-25 h-20 object-cover rounded-full mb-5"
@@ -57,7 +57,9 @@ const Contents = () => {
             />
           </div>
           <div>
-            <h2 className="text-gray-800 text-3xl font-semibold">Shinoj Nair</h2>
+            <h2 className="text-gray-800 text-3xl font-semibold">
+              Shinoj Nair
+            </h2>
             <h4 className="text-lg">Founder</h4>
             <p className="mt-2 text-gray-600">
               Mr. shinoj nair co-founder of the company, having nearly 15+ years
@@ -70,7 +72,7 @@ const Contents = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-2xl py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+        <div className="max-w-2xl py-4 px-8 bg-white shadow-lg rounded-lg my-20 xl:w-6/12  sm:w-3/6 ">
           <div className="flex justify-center md:justify-start -mt-16">
             <img
               className="w-25 h-20 object-cover rounded-full mb-5"
