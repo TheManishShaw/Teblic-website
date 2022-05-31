@@ -67,7 +67,7 @@ const FlutterContent = () => {
           <img
             className="object-cover object-center rounded"
             alt="Flutter"
-            src="/assets/img/flutter/flutter.png"
+            src="/assets/img/flutter/flutter.png" 
           />
         </div>
       </div>
