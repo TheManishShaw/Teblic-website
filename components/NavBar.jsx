@@ -144,8 +144,8 @@ const NavBar = () => {
         </div>
       </div>
 
-      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
-        <li className="border-b-2 py-3 border-zinc-300 w-full flex justify-between">
+      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"} >
+        <li className="border-b-2 py-3 border-zinc-300 w-full flex justify-between" >
           <Link href="/services">
             <a
               className={`${

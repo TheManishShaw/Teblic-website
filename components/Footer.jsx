@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 const Footer = () => {
   return (
@@ -82,20 +83,16 @@ const Footer = () => {
 
             <ul className="">
               <li className="text-white py-3">
-                <a className="cursor-pointer"> Services</a>
+                <Link href="/services" className="cursor-pointer"> Services</Link>
               </li>
               <li className="text-white py-3">
-                <a className="cursor-pointer"> Technology</a>
+                <Link  href='/technology' className="cursor-pointer">Technology</Link>
               </li>
               <li className="text-white py-3">
-                <a h className="cursor-pointer">
-                  {" "}
-                  About Us
-                </a>
+                <Link href="/about" className="cursor-pointer">About Us</Link>
               </li>
               <li className="text-white py-3">
-                {" "}
-                <a className="cursor-pointer"> Contact Us</a>
+                <Link href="/contact" className="cursor-pointer">Contact Us</Link>
               </li>
             </ul>
           </div>
