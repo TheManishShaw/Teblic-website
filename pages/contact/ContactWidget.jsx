@@ -1,48 +1,23 @@
 import React, { useState } from 'react';
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import swal from "sweetalert";
-const validateEmployee = (empData) => {
-  const errors = {};
 
-  if (!empData.Name) {
-    errors.Name = "Please Enter Employee Name";
-  } else if (empData.Name.length > 20) {
-    errors.Name = "Name cannot exceed 20 characters";
-  }
-
-  if (!empData.Location) {
-    errors.Location = "Please Enter Employee Location";
-  }
-
-  if (!empData.EmailId) {
-    errors.EmailId = "Please Enter Email ID";
-  } else if (
-    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(empData.EmailId)
-  ) {
-    errors.EmailId = "Invalid email address";
-  }
-
-  return errors;
-};
-const ContactWidget = () => {
-  const [userData, setUserData] = useState({
-    firstname: "",
-    phone: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-   let name, value;
-  const postUserData = (event) =>{
-    name = event.target.name;
-    value = event.target.value;
-
-    setUserData({ ...userData, [name]:value })
-  };
-
-  const submitData = async (event) => {
-    event.preventDefault();
-    const { firstname, phone, email, subject, message } = userData;
+const ContactWidget = (props) => {
+const [form, setForm] = useState({})
+const [errors, setErrors] = useState({})
+const setField = (field, value) =>{
+  setForm({
+    ...form,
+    [field]:value
+  })
+  if(!!errors[field])
+  setErrors({
+    ...errors,
+    [field]:null
+  })
+}
+const SubmitForm = (form) => {
+   const { firstname, phone, email, subject, message } = form;
 if (firstname && phone && email && subject && message) {
   const res = fetch(
     "https://tecblic-website-form-default-rtdb.asia-southeast1.firebasedatabase.app/userDatafrom.json",
@@ -61,7 +36,7 @@ if (firstname && phone && email && subject && message) {
     }
   );
   if (res) {
-    setUserData({
+    setForm({
       firstname: "",
       phone: "",
       email: "",
@@ -77,7 +52,7 @@ if (firstname && phone && email && subject && message) {
     });
   } else {
     swal({
-      title: "Please fill empty fields",
+      title: "Someting went worng",
       text: "",
       icon: "error",
       button: "Okay",
@@ -91,11 +66,46 @@ if (firstname && phone && email && subject && message) {
     button: "Okay",
   });
 }
-  };
 
+}
+const validdateForm = () =>{
+  const { firstname, phone, email, subject, message } = form;
+  const newErrors = {}
+
+  if(!firstname || firstname === '') newErrors.firstname = 'Please enter your name'
+  if (!phone || phone === "") newErrors.phone = "Please enter a phone no.";
+  
+  else if (!/^[0-9\b]+$/i.test(phone)) {newErrors.phone = "Enter a vaild phone no";}
+   
+  if (!email || email === "") newErrors.email = "Please enter a valid email";
+  else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
+    newErrors.email = "Invalid email address";
  
+  }
+   if (!subject || subject === "") newErrors.subject = "Please enter a subject";
+   if (!message || message === "") newErrors.message = "Please write something"
+   else if (message.length < 10) newErrors.message = 'message is too short'
+
+  return newErrors
+}
+const submitData = async (event) => { 
+    event.preventDefault();
+const formErrors = validdateForm()
+if(Object.keys(formErrors).length >0){
+  setErrors(formErrors)
+}
+else{
+  SubmitForm(form);
+}
+
+
+
+  };
   return (
     <div className="container px-8 xl:py-14 md:py-10 lg:py-10 sm:py-10 mx-auto my-5">
+      <h1 className=" text-3xl font-bold underline underline-offset-8 px-1 mb-6">
+        {props.heading}
+      </h1>
       <div className="shadow-md rounded-lg border border-gray-100  ">
         <div className="grid grid-cols-1 gap-2  xl:gap-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols- sm:items-center xl:grid-cols-2">
           <div className="">
@@ -106,49 +116,62 @@ if (firstname && phone && email && subject && message) {
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <input
-                    className=" block w-full  text-gray-900 border  rounded py-2 px-4  leading-tight focus:outline-none focus:bg-white"
+                    className={` block w-full  text-gray-900 border  rounded py-2 px-4  leading-tight focus:outline-none focus:bg-white${
+                      errors.firstname ? "border border-red-500" : ""
+                    }`}
                     id="grid-first-name"
                     type="text"
                     name="firstname"
                     placeholder="You Are"
-                    value={userData.firstname}
-                    onChange={postUserData}
+                    value={form.firstname}
+                    onChange={(e) => setField("firstname", e.target.value)}
                   />
+                  <p className="text-red-500 px-1">{errors.firstname}</p>
                 </div>
+
                 <div className="w-full md:w-1/2 px-3">
                   <input
-                    className=" block w-full  text-gray-900 border  rounded py-2 px-4 mb-0 leading-tight focus:outline-none focus:bg-white"
+                    className={`block w-full  text-gray-900 border  rounded py-2 px-4 mb-0 leading-tight focus:outline-none focus:bg-white${
+                      errors.phone ? "border border-red-500" : ""
+                    }`}
                     id="grid-first-name"
                     type="phone"
                     name="phone"
                     placeholder="Phone"
-                    value={userData.phone}
-                    onChange={postUserData}
+                    value={form.phone}
+                    onChange={(e) => setField("phone", e.target.value)}
                   />
+                  <p className="text-red-500 px-1">{errors.phone}</p>
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <input
-                    className=" block w-full  text-gray-900 border  rounded py-2 px-4 mb-0 leading-tight focus:outline-none focus:bg-white"
+                    className={`block w-full  text-gray-900 border  rounded py-2 px-4 mb-0 leading-tight focus:outline-none focus:bg-white ${
+                      errors.firstname ? "border border-red-500" : ""
+                    }`}
                     id="grid-first-name"
                     type="text"
                     name="email"
                     placeholder="Email"
-                    value={userData.email}
-                    onChange={postUserData}
+                    value={form.email}
+                    onChange={(e) => setField("email", e.target.value)}
                   />
+                  <p className="text-red-500 px-1">{errors.email}</p>
                 </div>
                 <div className="w-full md:w-1/2 px-3">
                   <input
-                    className=" block w-full  text-gray-900 border  rounded py-2 px-4 mb-0 leading-tight focus:outline-none focus:bg-white"
+                    className={`block w-full  text-gray-900 border  rounded py-2 px-4 mb-0 leading-tight focus:outline-none focus:bg-white${
+                      errors.firstname ? "border border-red-500" : ""
+                    }`}
                     id="grid-first-name"
                     type="text"
                     name="subject"
                     placeholder="Subject"
-                    value={userData.subject}
-                    onChange={postUserData}
+                    value={form.subject}
+                    onChange={(e) => setField("subject", e.target.value)}
                   />
+                  <p className="text-red-500 px-1">{errors.subject}</p>
                 </div>
               </div>
 
@@ -156,12 +179,15 @@ if (firstname && phone && email && subject && message) {
                 <div className="w-full px-3">
                   <textarea
                     placeholder="Looking for..."
-                    value={userData.message}
                     name="message"
-                    onChange={postUserData}
                     rows="2"
-                    className="appearance-none block w-full  text-gray-900 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    className={`appearance-none block w-full  text-gray-900 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white${
+                      errors.firstname ? "border border-red-500" : ""
+                    }`}
+                    value={form.message}
+                    onChange={(e) => setField("message", e.target.value)}
                   ></textarea>
+                  <p className="text-red-500 px-1">{errors.message}</p>
                 </div>
 
                 <button
