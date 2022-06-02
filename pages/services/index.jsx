@@ -14,8 +14,8 @@ const index = () => {
       <Hero
         classs="w-full h-screen bg-service bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
         priority
-        heading="Let's get to know"
-        heading1="each other"
+        heading="DISCOVER INNOVATION"
+        heading1="AND POSSIBILITIES"
       />
 
       <Services />

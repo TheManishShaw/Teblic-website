@@ -14,7 +14,8 @@ const index = () => {
       <Hero
         classs="w-full h-screen bg-technology bg-no-repeat object-cover bg-cover bg-center flex flex-col justify-between"
         priority
-        heading="Let's get to know each other"
+        heading="IDEAS THAT DELIVER"
+        heading1="RESULTS."
       />
       <TechnologyContent />
       <VideoBanner />

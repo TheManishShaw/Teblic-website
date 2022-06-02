@@ -9,6 +9,11 @@ export const Feature = () => {
               src="/assets/img/shinoj.png"
             />
           </div>
+
+
+          
+    
+
           <div>
             <h2 className="text-gray-800 text-3xl font-semibold">
               Shinoj Nair
