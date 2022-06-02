@@ -97,9 +97,6 @@ if(Object.keys(formErrors).length >0){
 else{
   SubmitForm(form);
 }
-
-
-
   };
   return (
     <div className="container px-8 xl:py-14 md:py-10 lg:py-10 sm:py-10 mx-auto my-5">
@@ -137,6 +134,7 @@ else{
                     id="grid-first-name"
                     type="phone"
                     name="phone"
+                    maxLength={10}
                     placeholder="Phone"
                     value={form.phone}
                     onChange={(e) => setField("phone", e.target.value)}
