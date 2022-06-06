@@ -67,7 +67,7 @@ const Contents = () => {
             <Image
               className="inset-0 h-full w-full object-cover object-top"
               src="/assets/img/shinoj1.JPEG"
-              width={400}
+              width={500}
               height={400}
             />
           </div>
@@ -112,7 +112,7 @@ const Contents = () => {
             <Image
               className="inset-0 h-full w-full object-cover object-top"
               src="/assets/img/heena.jpg"
-              width={400}
+              width={500}
               height={400}
             />
           </div>

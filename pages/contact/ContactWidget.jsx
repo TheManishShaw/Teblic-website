@@ -104,7 +104,7 @@ else{
         {props.heading}
       </h1>
       <div className="shadow-md rounded-lg border border-gray-100  ">
-        <div className="grid grid-cols-1 gap-2  xl:gap-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols- sm:items-center xl:grid-cols-2">
+        <div className="grid grid-cols-1 gap-1  xl:gap-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 sm:items-center xl:grid-cols-2">
           <div className="">
             <form className="p-5" method="POST">
               <h2 className="text-lg font-bold pb-5">
