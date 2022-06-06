@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 import Image from 'next/dist/client/image';
 const SingleBlog = (props) => {
   return (
     <div className=" rounded-xl shadow-xl bg-white hover:scale-105 hover:ease-in-out transition-all">
-      <a href="blogs/BlogView">
+      <Link href="/blogs/Blog-2">
         <Image
           src={props.img}
           alt="Blog Images"
@@ -11,7 +12,7 @@ const SingleBlog = (props) => {
           height={400}
           className="rounded-t-lg h-60 w-full object-cover"
         />
-      </a>
+      </Link>
       <p className="mt-3 px-9 text-xs font-semibold tracking-wide uppercase">
         <a
           className="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
@@ -21,12 +22,12 @@ const SingleBlog = (props) => {
         </a>{" "}
         <span className="text-gray-600">— {props.date}</span>
       </p>
-      <a href="blogs/BlogView">
-        <header className=" text-xl font-bold p-3 px-9">{props.title}</header>
-        <div className="px-5">
-          <p className=" px-4 text-zinc-500">{props.desc}</p>
-        </div>
-      </a>
+
+      <header className=" text-xl font-bold p-3 px-9">{props.title}</header>
+      <div className="px-5">
+        <p className=" px-4 text-zinc-500">{props.desc}</p>
+      </div>
+
       <footer className="text-left  py-2 px-5 text-gray-500 mb-2">
         <div className="flex items-center  inset-x-0 bottom-0 flex-wrap mt-2">
           <a aria-label="Author" title="Author" className="mr-3">

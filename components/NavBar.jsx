@@ -40,13 +40,9 @@ const NavBar = () => {
   const [serviceTap, setserviceTap] = useState(false);
   const onTabHandlertech = () => setserviceTap(!serviceTap);
   const handleClick = () => setNav(!nav);
-  const navLink = ({ isActive }) =>{
-    return{
-      fontWeight: isActive ? 'bold' : ''
-    }
-  }
+  
   return (
-    <div className="w-screen h-[80px] z-20 bg-zinc-100 fixed drop-shadow-lg ">
+    <div className="w-screen h-[80px] z-20 bg-zinc-100 top-0 fixed  drop-shadow-lg ">
       <div className=" 2xl:px-36 xl:px-5 lg:pl-2 md:px-3 sm:px-2 xs:px-2 px-2  flex justify-between items-center w-full h-full">
         <div className="flex items-center">
           <h1 className="text-3xl font-bold mr-4 mt-1 sm:text-4xl font">
@@ -80,7 +76,7 @@ const NavBar = () => {
                       className={`rounded-md hover:underline hover:transition hover:underline-offset-2 duration-300 hover:font-semibold bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block whitespace-no-wrap ${
                         router.pathname === item.href
                           ? "text-black font-bold underline underline-offset-2"
-                          : "hover:bg-zinc-100 hover:text-black"
+                          : " hover:text-black"
                       }`}
                     >
                       {item.name}
@@ -179,7 +175,7 @@ const NavBar = () => {
                         <a
                           className={`text-sm font-normal hover:underline  hover:underline-offset-2  bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block${
                             router.pathname === item.href
-                              ? "text-black  underline font-bold underline-offset-2"
+                              ? "text-black  underline underline-offset-2"
                               : "hover:bg-zinc-100 hover:font-bold hover:text-black"
                           }`}
                         >
