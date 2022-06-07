@@ -39,8 +39,23 @@ const NavBar = () => {
   const onTabHandler = () => setTap(!tap);
   const [serviceTap, setserviceTap] = useState(false);
   const onTabHandlertech = () => setserviceTap(!serviceTap);
-  const handleClick = () => setNav(!nav);
+  const handleClick = () =>{
+setNav(!nav);
+resetValue(false)
+  } 
   
+  const [show, setShow] = useState(false);
+  const [isValue,setisValue] = useState(false);
+  const onClickWeb = () => {
+    console.log('Before Value '+ isValue);
+     setisValue(isValue = true);
+    console.log('After Value '+ isValue);
+  };
+
+  const resetValue=()=>{    
+     setisValue(isValue = false); 
+     
+  }
   return (
     <div className="w-screen h-[80px] z-20 bg-zinc-100 top-0 fixed  drop-shadow-lg ">
       <div className=" 2xl:px-36 xl:px-5 lg:pl-2 md:px-3 sm:px-2 xs:px-2 px-2  flex justify-between items-center w-full h-full">
@@ -55,7 +70,7 @@ const NavBar = () => {
           </h1>
         </div>
 
-        <ul className="hidden md:flex pr-28">
+        <ul className="hidden md:flex pr-28" onMouseEnter={resetValue}>
           <div className="group inline-block relative">
             <Link href="/services">
               <a
@@ -68,16 +83,24 @@ const NavBar = () => {
                 Services
               </a>
             </Link>
-            <ul className="absolute  hidden w-60 bg-white rounded-lg text-gray-700 pt-1 group-hover:block transition ease-in-out delay-300">
+
+            <ul
+              className={` ${
+                isValue == true
+                  ? " hidden "
+                  : " absolute hidden rounded-md w-60 bg-white text-gray-700 pt-1 group-hover:block transition ease-in-out delay-300 "
+              } `}
+            >
               {services.map((item) => (
                 <li key={item.id} className="flex">
                   <Link href={item.href}>
                     <a
+                      onClick={onClickWeb}
                       className={`rounded-md hover:underline hover:transition hover:underline-offset-2 duration-300 hover:font-semibold bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block whitespace-no-wrap ${
                         router.pathname === item.href
                           ? "text-black font-bold underline underline-offset-2"
                           : " hover:text-black"
-                      }`}
+                      } `}
                     >
                       {item.name}
                     </a>
@@ -99,11 +122,18 @@ const NavBar = () => {
               </a>
             </Link>
 
-            <ul className="  absolute animate-right-left  hidden w-60 bg-white rounded-lg text-gray-700 pt-1 group-hover:block transition ease-in-out delay-2000 ">
+            <ul
+              className={` ${
+                isValue == true
+                  ? " hidden "
+                  : " absolute hidden rounded-md w-60 bg-white text-gray-700 pt-1 group-hover:block transition ease-in-out delay-300 "
+              } `}
+            >
               {technology.map((item) => (
                 <li key={item.id} className="flex">
                   <Link href={item.href}>
                     <a
+                      onClick={onClickWeb}
                       className={`rounded-md hover:underline hover:transition hover:underline-offset-2 duration-300 hover:font-semibold bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block whitespace-no-wrap ${
                         router.pathname === item.href
                           ? "text-black font-bold underline underline-offset-2"
@@ -140,10 +170,11 @@ const NavBar = () => {
         </div>
       </div>
 
-      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"} >
-        <li className="border-b-2 py-3 border-zinc-300 w-full flex justify-between" >
+      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
+        <li className="border-b-2 py-3 border-zinc-300 w-full flex justify-between">
           <Link href="/services">
             <a
+              onClick={handleClick}
               className={`${
                 router.pathname === "/services"
                   ? "text-black  underline font-bold underline-offset-2"
@@ -173,6 +204,7 @@ const NavBar = () => {
                     <li key={item.id} className="flex">
                       <Link href={item.href}>
                         <a
+                          onClick={handleClick}
                           className={`text-sm font-normal hover:underline  hover:underline-offset-2  bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block${
                             router.pathname === item.href
                               ? "text-black  underline underline-offset-2"
@@ -192,6 +224,7 @@ const NavBar = () => {
         <li className="border-b-2 py-3 border-zinc-300 w-full flex justify-between">
           <Link href="/technology">
             <a
+              onClick={handleClick}
               className={`${
                 router.pathname === "/technology"
                   ? "text-black  underline font-bold underline-offset-2"
@@ -221,6 +254,7 @@ const NavBar = () => {
                     <li key={item.id} className="flex">
                       <Link href={item.href}>
                         <a
+                          onClick={handleClick}
                           className={`text-sm  hover:underline  hover:underline-offset-2  bg-white w-full hover:bg-gray-50 py-2 px-4 inline-block font-normal ${
                             router.pathname === item.href
                               ? "text-black  underline font-bold underline-offset-2"
@@ -244,6 +278,7 @@ const NavBar = () => {
           >
             <Link href={item.href}>
               <a
+                onClick={handleClick}
                 className={`${
                   router.pathname === item.href
                     ? "text-black  underline font-bold underline-offset-2"

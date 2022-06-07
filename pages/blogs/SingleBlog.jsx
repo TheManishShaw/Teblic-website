@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/dist/client/image';
+import Image from 'next/image';
 const SingleBlog = (props) => {
   return (
     <div className=" rounded-xl shadow-xl bg-white hover:scale-105 hover:ease-in-out transition-all">
@@ -31,10 +31,12 @@ const SingleBlog = (props) => {
       <footer className="text-left  py-2 px-5 text-gray-500 mb-2">
         <div className="flex items-center  inset-x-0 bottom-0 flex-wrap mt-2">
           <a aria-label="Author" title="Author" className="mr-3">
-            <img
+            <Image
               src={props.authimg}
               alt="avatar"
               className="object-cover w-10 h-10 rounded-full shadow-sm"
+              width={50}
+              height={50}
             />
           </a>
           <div>

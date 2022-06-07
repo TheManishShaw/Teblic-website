@@ -69,6 +69,7 @@ const Contents = () => {
               src="/assets/img/shinoj1.JPEG"
               width={500}
               height={400}
+              alt="Shinoj"
             />
           </div>
 
@@ -114,6 +115,7 @@ const Contents = () => {
               src="/assets/img/heena.jpg"
               width={500}
               height={400}
+              alt="Heena"
             />
           </div>
         </div>

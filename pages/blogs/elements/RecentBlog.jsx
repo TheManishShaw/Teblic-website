@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 const RecentBlog = () => {
   return (
     <>
@@ -22,7 +22,7 @@ const RecentBlog = () => {
                 data-wow-delay=".1s"
               >
                 <div className="w-full max-w-[80px] h-20 rounded-full overflow-hidden mr-5">
-                  <img src="/favicon.png" alt="image" className="w-full" />
+                  <Image src="/favicon.png" alt="image" className="w-full" width={200} height={200} />
                 </div>
                 <div className="w-full">
                   <h4>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 const BlogBanner = () => {
   return (
     <>
@@ -7,16 +7,23 @@ const BlogBanner = () => {
         className="relative  rounded overflow-hidden z-10 mb-[60px] h-[300px] md:h-[400px] lg:h-[500px] wow fadeInUp"
         data-wow-delay=".2s"
       >
-        <img
+        <Image
           src="/assets/img/banners/blog.png"
           alt="image"
+          layout="fill"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute w-full h-full top-0 left-0 flex items-end z-10 bg-gradient-to-t from-dark-700 to-transparent">
           <div className="flex flex-wrap items-center p-4 sm:p-8 pb-4">
             <div className="flex items-center mb-4 mr-5 md:mr-10">
               <div className="w-10 h-10 rounded-full overflow-hidden mr-4">
-                <img src="/favicon.png" alt="image" className="w-full" />
+                <Image
+                  src="/favicon.png"
+                  alt="image"
+                  className="w-full"
+                  width={50}
+                  height={50}
+                />
               </div>
               <p className="text-base text-white font-medium">
                 By{" "}

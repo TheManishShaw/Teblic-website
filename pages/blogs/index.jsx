@@ -16,6 +16,7 @@ const index = () => {
         heading1="TECH-VERSE."
       />
       <Blogs />
+      
     </>
   );
 }
