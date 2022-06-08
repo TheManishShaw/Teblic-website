@@ -70,7 +70,7 @@ const FlutterContent = () => {
             alt="Flutter"
             width={800}
             height={500}
-            src="/assets/img/flutter/flutter.png" 
+            src="/assets/img/flutter/flutter222.png" 
           />
         </div>
       </div>
