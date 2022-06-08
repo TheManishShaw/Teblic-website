@@ -63,7 +63,7 @@ const ReactContent = () => {
           <img
             className="object-cover object-center rounded"
             alt="React"
-            src="/assets/img/React/React.png"
+            src="/assets/img/react/react.png"
           />
         </div>
       </div>
