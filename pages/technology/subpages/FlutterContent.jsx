@@ -1,5 +1,6 @@
 import React from 'react';
 import Desc from '../../services/elements/Desc';
+import Image from 'next/image';
 const fluttercontent = [
   {
     id: 1,
@@ -64,9 +65,11 @@ const FlutterContent = () => {
           />
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-full">
-          <img
+          <Image
             className="object-cover object-center rounded"
             alt="Flutter"
+            width={800}
+            height={500}
             src="/assets/img/flutter/flutter.png" 
           />
         </div>

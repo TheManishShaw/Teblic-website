@@ -1,4 +1,4 @@
-import React from "react";
+import React from "React";
 import Desc from "../../services/elements/Desc";
 const golangcontent = [
   {
@@ -7,7 +7,7 @@ const golangcontent = [
   },
   {
     id: 2,
-    desc: "Debuted in the market in may 2013, react enjoys a loyal and growing community of developers that adds to its popularity with each passing day. Below are some the amazing features of React.",
+    desc: "Debuted in the market in may 2013, React enjoys a loyal and growing community of developers that adds to its popularity with each passing day. Below are some the amazing features of React.",
   },
   {
     id: 3,
@@ -17,7 +17,7 @@ const golangcontent = [
   {
     id: 4,
     heading: "Power-packed performance",
-    desc: "Leaning on virtual dom, react assists in faster creation of web applications. In contrast to other apps, react only updates the items that were changed after comparing it from previous state.",
+    desc: "Leaning on virtual dom, React assists in faster creation of web applications. In contrast to other apps, React only updates the items that were changed after comparing it from previous state.",
   },
  
 ];
@@ -36,7 +36,7 @@ const outercontent = [
   {
     id: 3,
     heading:
-      "Leaning on the efficiency of powerful react and our technical experts, tecblic crafts flawless web applications that gels with our client’s business requirements aiding in scoring business goals.",
+      "Leaning on the efficiency of powerful React and our technical experts, tecblic crafts flawless web applications that gels with our client’s business requirements aiding in scoring business goals.",
   },
 ];
 const ReactContent = () => {
@@ -63,7 +63,7 @@ const ReactContent = () => {
           <img
             className="object-cover object-center rounded"
             alt="React"
-            src="/assets/img/react/React.png"
+            src="/assets/img/React/React.png"
           />
         </div>
       </div>

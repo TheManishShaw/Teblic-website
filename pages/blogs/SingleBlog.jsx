@@ -10,24 +10,24 @@ const SingleBlog = (props) => {
           alt="Blog Images"
           width={1000}
           height={400}
-          className="rounded-t-lg h-60 w-full object-cover"
+          className="rounded-t-lg h-60 w-full object-cover cursor-pointer"
         />
       </Link>
       <p className="mt-3 px-9 text-xs font-semibold tracking-wide uppercase">
         <a
-          className="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+          className="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 cursor-pointer"
           aria-label="Category"
         >
           {props.category}
         </a>{" "}
         <span className="text-gray-600">— {props.date}</span>
       </p>
-
-      <header className=" text-xl font-bold p-3 px-9">{props.title}</header>
-      <div className="px-5">
-        <p className=" px-4 text-zinc-500">{props.desc}</p>
-      </div>
-
+      <a href="/blogs/Blog-2">
+        <header className=" text-xl font-bold p-3 px-9">{props.title}</header>
+        <div className="px-5">
+          <p className=" px-4 text-zinc-500">{props.desc}</p>
+        </div>
+      </a>
       <footer className="text-left  py-2 px-5 text-gray-500 mb-2">
         <div className="flex items-center  inset-x-0 bottom-0 flex-wrap mt-2">
           <a aria-label="Author" title="Author" className="mr-3">
