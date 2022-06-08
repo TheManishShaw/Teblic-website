@@ -1,8 +1,7 @@
 import React from 'react'
-import useRouter from 'next/router';
 import { TwitterIcon, TwitterShareButton, FacebookShareButton,LinkedinShareButton, WhatsappShareButton, FacebookIcon, LinkedinIcon, WhatsappIcon, } from "react-share";
 const BlogShare = () => {
-  const router = useRouter();
+
   return (
     <>
       <div className="flex flex-wrap items-center -mx-4 mb-12">
@@ -15,7 +14,7 @@ const BlogShare = () => {
               Share This Post
             </span>
             <div className="flex gap-2 items-center">
-              <FacebookShareButton url="https://tecblic.vercel.app/blogs/Blog-2">
+              <FacebookShareButton url="https://www.tecblic.com/">
                 <FacebookIcon
                   size={32}
                   round={true}
@@ -23,21 +22,21 @@ const BlogShare = () => {
                   className="cursor-pointer"
                 />
               </FacebookShareButton>
-              <TwitterShareButton url={router.pathname}>
+              <TwitterShareButton url="https://www.tecblic.com/">
                 <TwitterIcon
                   size={32}
                   round={true}
                   className="cursor-pointer"
                 />
               </TwitterShareButton>
-              <LinkedinShareButton url={router.pathname}>
+              <LinkedinShareButton url="https://www.tecblic.com/">
                 <LinkedinIcon
                   size={32}
                   round={true}
                   className="cursor-pointer"
                 />
               </LinkedinShareButton>
-              <WhatsappShareButton url={router.pathname}>
+              <WhatsappShareButton url="https://www.tecblic.com/">
                 <WhatsappIcon
                   size={32}
                   round={true}
