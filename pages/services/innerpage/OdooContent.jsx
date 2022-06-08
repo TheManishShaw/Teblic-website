@@ -56,7 +56,7 @@ const OdooContent = () => {
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-10 lg:pr-5 md:pl-16  flex flex-col md:items-start md:text-left  md:mb-0 ">
-          <p className="mb-5 leading-relaxed">
+          <p className="mx-5 leading-relaxed">
             Depending on the client’s requirements, tecblic can provide odoo
             integration with third party modules such as whatsapp and other
             popular social media integrations, payment gateways, and sms
