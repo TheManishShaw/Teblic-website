@@ -22,12 +22,12 @@ const SingleBlog = (props) => {
         </a>{" "}
         <span className="text-gray-600">— {props.date}</span>
       </p>
-      <a href="/blogs/Blog-2">
+      <Link href="/blogs/Blog-2">
         <header className=" text-xl font-bold p-3 px-9">{props.title}</header>
         <div className="px-5">
           <p className=" px-4 text-zinc-500">{props.desc}</p>
         </div>
-      </a>
+      </Link>
       <footer className="text-left  py-2 px-5 text-gray-500 mb-2">
         <div className="flex items-center  inset-x-0 bottom-0 flex-wrap mt-2">
           <a aria-label="Author" title="Author" className="mr-3">
