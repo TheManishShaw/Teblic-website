@@ -34,7 +34,7 @@ const SingleBlog = (props) => {
             <Image
               src={props.authimg}
               alt="avatar"
-              className="object-cover w-10 h-10 rounded-full shadow-sm"
+              className="object-cover w-10 h-10 rounded-full shadow-sm hover:scale-105 overflow-hidden"
               width={50}
               height={50}
             />

@@ -3,3 +3,18 @@
 @tailwind utilities;
 
 
+.scrollhost::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollhost ::-moz-scrollbar {
+    display: none;
+
+}
+
+.scrollhost {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-color: transparent transparent;
+    /*just hides the scrollbar for firefox */
+}

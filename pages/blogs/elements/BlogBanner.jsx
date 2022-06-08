@@ -11,7 +11,7 @@ const BlogBanner = () => {
           src="/assets/img/banners/blog.png"
           alt="image"
           layout="fill"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center hover:scale-105 overflow-hidden"
         />
         <div className="absolute w-full h-full top-0 left-0 flex items-end z-10 bg-gradient-to-t from-dark-700 to-transparent">
           <div className="flex flex-wrap items-center p-4 sm:p-8 pb-4">

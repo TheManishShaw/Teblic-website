@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const Card = (props) => {
   return (
-    <div className=" rounded-xl shadow-xl bg-white hover:scale-105 hover:ease-in-out transition-all">
+    <div className=" rounded-xl shadow-xl bg-white hover:scale-105 hover:ease-in-out transition-all animate-fade-in-up">
       <Image
         src={props.img}
         alt=""

@@ -40,7 +40,7 @@ const outercontent = [
 ];
 const FlutterContent = () => {
   return (
-    <d iv className=" text-zinc-500 body-font container mx-auto  px-5 py-10">
+    <div className=" text-zinc-500 body-font container mx-auto  px-5 py-10">
       <div className=" ">
         <h2 className="max-w-4xl xl:mb-8 font-sans xl:text-4xl md:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl text-3xl sm:leading-none">
           BUILD SUSTAINABLE AND SCALABLE APPS WITH FLUTTER
@@ -89,7 +89,7 @@ const FlutterContent = () => {
           ))}
         </div>
       </div>
-    </d>
+    </div>
   );
 }
 
